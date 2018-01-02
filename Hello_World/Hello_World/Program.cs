@@ -12,6 +12,7 @@ namespace Hello_World
         {
             Console.WriteLine("GG na kids");
             Console.ReadLine();
+
         }
     }
 }
