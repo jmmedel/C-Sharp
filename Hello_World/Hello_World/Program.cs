@@ -10,7 +10,8 @@ namespace Hello_World
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine("GG na kids");
+            Console.ReadLine();
         }
     }
 }
