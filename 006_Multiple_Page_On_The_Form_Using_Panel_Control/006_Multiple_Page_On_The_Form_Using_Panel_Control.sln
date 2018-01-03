@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "006_Multiple_Page_On_The_Form_Using_Panel_Control", "006_Multiple_Page_On_The_Form_Using_Panel_Control\006_Multiple_Page_On_The_Form_Using_Panel_Control.csproj", "{2C2A839A-CEFD-4095-9585-505DD8B122C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C2A839A-CEFD-4095-9585-505DD8B122C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C2A839A-CEFD-4095-9585-505DD8B122C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C2A839A-CEFD-4095-9585-505DD8B122C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C2A839A-CEFD-4095-9585-505DD8B122C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F7D204C-6CCD-4A62-A01C-082F4EFD396C}
+	EndGlobalSection
+EndGlobal
