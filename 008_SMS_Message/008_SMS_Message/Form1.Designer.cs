@@ -30,13 +30,13 @@
         {
             this.btmSend = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtMessage = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btmSend
@@ -47,6 +47,7 @@
             this.btmSend.TabIndex = 0;
             this.btmSend.Text = "Send";
             this.btmSend.UseVisualStyleBackColor = true;
+            this.btmSend.Click += new System.EventHandler(this.btmSend_Click);
             // 
             // label1
             // 
@@ -57,19 +58,20 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Username";
             // 
-            // textBox1
+            // txtUserName
             // 
-            this.textBox1.Location = new System.Drawing.Point(97, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 19);
-            this.textBox1.TabIndex = 2;
+            this.txtUserName.Location = new System.Drawing.Point(97, 22);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(208, 19);
+            this.txtUserName.TabIndex = 2;
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(97, 47);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(208, 19);
-            this.textBox2.TabIndex = 4;
+            this.txtPassword.Location = new System.Drawing.Point(97, 47);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(208, 19);
+            this.txtPassword.TabIndex = 4;
             // 
             // label2
             // 
@@ -80,12 +82,12 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Password";
             // 
-            // textBox3
+            // txtPhoneNumber
             // 
-            this.textBox3.Location = new System.Drawing.Point(97, 72);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(208, 19);
-            this.textBox3.TabIndex = 6;
+            this.txtPhoneNumber.Location = new System.Drawing.Point(97, 72);
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.Size = new System.Drawing.Size(208, 19);
+            this.txtPhoneNumber.TabIndex = 6;
             // 
             // label3
             // 
@@ -105,32 +107,36 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Message";
             // 
-            // textBox4
+            // txtMessage
             // 
-            this.textBox4.Location = new System.Drawing.Point(12, 138);
-            this.textBox4.MaxLength = 200;
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox4.Size = new System.Drawing.Size(455, 230);
-            this.textBox4.TabIndex = 8;
+            this.txtMessage.Location = new System.Drawing.Point(12, 138);
+            this.txtMessage.MaxLength = 200;
+            this.txtMessage.Multiline = true;
+            this.txtMessage.Name = "txtMessage";
+            this.txtMessage.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtMessage.Size = new System.Drawing.Size(455, 230);
+            this.txtMessage.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(479, 409);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtMessage);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtPhoneNumber);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btmSend);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Send_Message";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,13 +146,13 @@
 
         private System.Windows.Forms.Button btmSend;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtPhoneNumber;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtMessage;
     }
 }
 
