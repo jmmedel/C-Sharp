@@ -1,6 +1,6 @@
 ﻿namespace _010_Get_All_Forms_And_Open_Form_Name
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btmOpen = new System.Windows.Forms.Button();
+            this.cboxFormName = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // btmOpen
+            // 
+            this.btmOpen.Location = new System.Drawing.Point(151, 122);
+            this.btmOpen.Name = "btmOpen";
+            this.btmOpen.Size = new System.Drawing.Size(75, 23);
+            this.btmOpen.TabIndex = 0;
+            this.btmOpen.Text = "Open";
+            this.btmOpen.UseVisualStyleBackColor = true;
+            this.btmOpen.Click += new System.EventHandler(this.btmOpen_Click);
+            // 
+            // cboxFormName
+            // 
+            this.cboxFormName.FormattingEnabled = true;
+            this.cboxFormName.Location = new System.Drawing.Point(98, 84);
+            this.cboxFormName.Name = "cboxFormName";
+            this.cboxFormName.Size = new System.Drawing.Size(148, 20);
+            this.cboxFormName.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(28, 87);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 12);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Form_Name";
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(269, 213);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cboxFormName);
+            this.Controls.Add(this.btmOpen);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "MainForm";
+            this.Text = "MainForm";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btmOpen;
+        private System.Windows.Forms.ComboBox cboxFormName;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -16,7 +16,7 @@ namespace _010_Get_All_Forms_And_Open_Form_Name
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MainForm());
         }
     }
 }
