@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "011_Generate_Barcode_And_Qr_Code", "011_Generate_Barcode_And_Qr_Code\011_Generate_Barcode_And_Qr_Code.csproj", "{64C2B176-7E55-4561-855C-4D79B7E09D58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64C2B176-7E55-4561-855C-4D79B7E09D58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64C2B176-7E55-4561-855C-4D79B7E09D58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64C2B176-7E55-4561-855C-4D79B7E09D58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64C2B176-7E55-4561-855C-4D79B7E09D58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE9D20EF-46F4-4636-80D9-42F18861FA97}
+	EndGlobalSection
+EndGlobal
