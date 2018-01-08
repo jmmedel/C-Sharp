@@ -33,24 +33,19 @@
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.lblStatus = new System.Windows.Forms.Label();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.dataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.storidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ordnumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orddateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qtyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paytermsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.titleidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.saleDataset = new _012_Export_DataGridView_To_CSV__File.SaleDataset();
             this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
-            this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet1 = new _012_Export_DataGridView_To_CSV__File.DataSet1();
-            this.dataSet1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataTable1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salesTableAdapter = new _012_Export_DataGridView_To_CSV__File.SaleDatasetTableAdapters.salesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saleDataset)).BeginInit();
             this.SuspendLayout();
             // 
             // btmExport
@@ -85,23 +80,64 @@
             this.dataGridView.AutoGenerateColumns = false;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn,
-            this.fullNameDataGridViewTextBoxColumn,
-            this.userNameDataGridViewTextBoxColumn,
-            this.passwordDataGridViewTextBoxColumn,
-            this.addressDataGridViewTextBoxColumn,
-            this.Address});
-            this.dataGridView.DataSource = this.dataTable1BindingSource;
+            this.storidDataGridViewTextBoxColumn,
+            this.ordnumDataGridViewTextBoxColumn,
+            this.orddateDataGridViewTextBoxColumn,
+            this.qtyDataGridViewTextBoxColumn,
+            this.paytermsDataGridViewTextBoxColumn,
+            this.titleidDataGridViewTextBoxColumn});
+            this.dataGridView.DataSource = this.salesBindingSource;
             this.dataGridView.Location = new System.Drawing.Point(12, 12);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowTemplate.Height = 21;
             this.dataGridView.Size = new System.Drawing.Size(529, 319);
             this.dataGridView.TabIndex = 3;
             // 
-            // dataTable1BindingSource
+            // storidDataGridViewTextBoxColumn
             // 
-            this.dataTable1BindingSource.DataMember = "DataTable1";
-            this.dataTable1BindingSource.DataSource = typeof(_012_Export_DataGridView_To_CSV__File.DataSet1);
+            this.storidDataGridViewTextBoxColumn.DataPropertyName = "stor_id";
+            this.storidDataGridViewTextBoxColumn.HeaderText = "stor_id";
+            this.storidDataGridViewTextBoxColumn.Name = "storidDataGridViewTextBoxColumn";
+            // 
+            // ordnumDataGridViewTextBoxColumn
+            // 
+            this.ordnumDataGridViewTextBoxColumn.DataPropertyName = "ord_num";
+            this.ordnumDataGridViewTextBoxColumn.HeaderText = "ord_num";
+            this.ordnumDataGridViewTextBoxColumn.Name = "ordnumDataGridViewTextBoxColumn";
+            // 
+            // orddateDataGridViewTextBoxColumn
+            // 
+            this.orddateDataGridViewTextBoxColumn.DataPropertyName = "ord_date";
+            this.orddateDataGridViewTextBoxColumn.HeaderText = "ord_date";
+            this.orddateDataGridViewTextBoxColumn.Name = "orddateDataGridViewTextBoxColumn";
+            // 
+            // qtyDataGridViewTextBoxColumn
+            // 
+            this.qtyDataGridViewTextBoxColumn.DataPropertyName = "qty";
+            this.qtyDataGridViewTextBoxColumn.HeaderText = "qty";
+            this.qtyDataGridViewTextBoxColumn.Name = "qtyDataGridViewTextBoxColumn";
+            // 
+            // paytermsDataGridViewTextBoxColumn
+            // 
+            this.paytermsDataGridViewTextBoxColumn.DataPropertyName = "payterms";
+            this.paytermsDataGridViewTextBoxColumn.HeaderText = "payterms";
+            this.paytermsDataGridViewTextBoxColumn.Name = "paytermsDataGridViewTextBoxColumn";
+            // 
+            // titleidDataGridViewTextBoxColumn
+            // 
+            this.titleidDataGridViewTextBoxColumn.DataPropertyName = "title_id";
+            this.titleidDataGridViewTextBoxColumn.HeaderText = "title_id";
+            this.titleidDataGridViewTextBoxColumn.Name = "titleidDataGridViewTextBoxColumn";
+            // 
+            // salesBindingSource
+            // 
+            this.salesBindingSource.DataMember = "sales";
+            this.salesBindingSource.DataSource = this.saleDataset;
+            // 
+            // saleDataset
+            // 
+            this.saleDataset.DataSetName = "SaleDataset";
+            this.saleDataset.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // backgroundWorker
             // 
@@ -111,61 +147,9 @@
             this.backgroundWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.BackGroundWorker_ProgressChanged);
             this.backgroundWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.BackGroundWorker_RunWorkerCompleted);
             // 
-            // dataSet1BindingSource
+            // salesTableAdapter
             // 
-            this.dataSet1BindingSource.DataSource = this.dataSet1;
-            this.dataSet1BindingSource.Position = 0;
-            // 
-            // dataSet1
-            // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataSet1BindingSource1
-            // 
-            this.dataSet1BindingSource1.DataSource = this.dataSet1;
-            this.dataSet1BindingSource1.Position = 0;
-            // 
-            // dataTable1BindingSource1
-            // 
-            this.dataTable1BindingSource1.DataMember = "DataTable1";
-            this.dataTable1BindingSource1.DataSource = this.dataSet1BindingSource;
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            // 
-            // fullNameDataGridViewTextBoxColumn
-            // 
-            this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
-            this.fullNameDataGridViewTextBoxColumn.HeaderText = "FullName";
-            this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
-            // 
-            // userNameDataGridViewTextBoxColumn
-            // 
-            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "UserName";
-            this.userNameDataGridViewTextBoxColumn.HeaderText = "UserName";
-            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            // 
-            // Address
-            // 
-            this.Address.DataPropertyName = "Address";
-            this.Address.HeaderText = "Address";
-            this.Address.Name = "Address";
+            this.salesTableAdapter.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -183,11 +167,8 @@
             this.Text = "Export DataGridView To CSV";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saleDataset)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,17 +181,15 @@
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.ComponentModel.BackgroundWorker backgroundWorker;
-        private System.Windows.Forms.BindingSource dataSet1BindingSource;
-        private DataSet1 dataSet1;
-        private System.Windows.Forms.BindingSource dataTable1BindingSource;
-        private System.Windows.Forms.BindingSource dataSet1BindingSource1;
-        private System.Windows.Forms.BindingSource dataTable1BindingSource1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fullNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Address;
+        private SaleDataset saleDataset;
+        private System.Windows.Forms.BindingSource salesBindingSource;
+        private SaleDatasetTableAdapters.salesTableAdapter salesTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn storidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ordnumDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn orddateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qtyDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn paytermsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn titleidDataGridViewTextBoxColumn;
     }
 }
 

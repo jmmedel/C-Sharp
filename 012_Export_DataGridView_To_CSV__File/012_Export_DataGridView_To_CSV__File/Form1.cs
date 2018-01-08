@@ -20,16 +20,15 @@ namespace _012_Export_DataGridView_To_CSV__File
         }
 
         private void BackGroundWorker_Do_Work(object sender, DoWorkEventArgs e)
-        {
-            List<DataSet1> list = ((dataParameter)e.Argument).productlist;
-            string filename = ((dataParameter)e.Argument).filename;
+        {   
+            
             int index = 1;
-            int process = list.Count;
-            using (StreamWriter sw = new StreamWriter(new FileStream(filename, FileMode.Create), Encoding.UTF8))
+            int process = salesBindingSource.Count;
+            using (StreamWriter sw = new StreamWriter(new FileStream("gg", FileMode.Create), Encoding.UTF8))
             {
                 StringBuilder sb = new StringBuilder();
-                sb.Append("ProductId,producname,price,stocks");
-                 foreach(DataSet1 p in list)
+                
+                foreach(object p in saleDataset.sales)
                 {
                     if (!backgroundWorker.CancellationPending)
                     {
@@ -41,26 +40,15 @@ namespace _012_Export_DataGridView_To_CSV__File
             }
         }
 
-        static DataSet1 db;
-        protected static DataSet1 App
-        {
-            get
-            {
-                if (db == null)
-                    db = new DataSet1();
-                return db;
-            }
-        }
+        
 
-        struct dataParameter
-        {
-            public List<DataSet1> productlist;
-            public string filename { get; set; }
-        }
-        dataParameter _inputparameter;
+        
         private void Form1_Load(object sender, EventArgs e)
         {
-            dataTable1BindingSource.DataSource = db;
+            // TODO: This line of code loads data into the 'saleDataset.sales' table. You can move, or remove it, as needed.
+            this.salesTableAdapter.Fill(this.saleDataset.sales);
+           
+            
         }
 
         private void BackGroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
@@ -84,11 +72,10 @@ namespace _012_Export_DataGridView_To_CSV__File
             {
                 if(sfd.ShowDialog() == DialogResult.OK)
                 {
-                    _inputparameter.productlist = dataTable1BindingSource.DataSource as List<DataSet1>;
-                    _inputparameter.filename = sfd.FileName;
+                    
                     progressBar.Minimum = 0;
                     progressBar.Value = 0;
-                    backgroundWorker.RunWorkerAsync(_inputparameter);
+                    backgroundWorker.RunWorkerAsync();
                 }
             }
         }
