@@ -23,6 +23,7 @@ namespace _019_Embed_Video_Into_Windows_Form
         {
             _yurl = txtUrl.Text;
             webBrowser.Navigate(_yurl);
+
         }
     }
 }
