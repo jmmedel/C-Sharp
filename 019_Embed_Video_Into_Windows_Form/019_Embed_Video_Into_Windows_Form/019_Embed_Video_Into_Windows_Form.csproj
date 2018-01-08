@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1B70551A-3B98-45F9-8464-CDCB4BE10688}</ProjectGuid>
+    <ProjectGuid>{0C43C440-2587-49E6-8472-CB528A2B07DD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>_017_Search_DataGridView_Using_ComboBox_And_TxtBox</RootNamespace>
-    <AssemblyName>017_Search_DataGridView_Using_ComboBox_And_TxtBox</AssemblyName>
+    <RootNamespace>_019_Embed_Video_Into_Windows_Form</RootNamespace>
+    <AssemblyName>019_Embed_Video_Into_Windows_Form</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -53,14 +53,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SaleData.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SaleData.xsd</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -79,17 +71,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="SaleData.xsc">
-      <DependentUpon>SaleData.xsd</DependentUpon>
-    </None>
-    <None Include="SaleData.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>SaleData.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="SaleData.xss">
-      <DependentUpon>SaleData.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
