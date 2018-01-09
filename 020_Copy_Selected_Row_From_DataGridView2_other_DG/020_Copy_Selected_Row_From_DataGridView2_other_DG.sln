@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "020_Copy_Selected_Row_From_DataGridView2_other_DG", "020_Copy_Selected_Row_From_DataGridView2_other_DG\020_Copy_Selected_Row_From_DataGridView2_other_DG.csproj", "{3DA0397C-8515-464C-8061-D34E87D89628}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DA0397C-8515-464C-8061-D34E87D89628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DA0397C-8515-464C-8061-D34E87D89628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DA0397C-8515-464C-8061-D34E87D89628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DA0397C-8515-464C-8061-D34E87D89628}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9FD2CD15-6DF6-4794-90AB-D05218621E93}
+	EndGlobalSection
+EndGlobal
