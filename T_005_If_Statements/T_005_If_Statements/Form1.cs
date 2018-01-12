@@ -16,5 +16,23 @@ namespace T_005_If_Statements
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // using if statements 
+            // you can use <> == != 
+
+            if (textBox1.Text == "Kagaya")
+            {
+                MessageBox.Show("Hello");
+            }
+            else if (textBox1.Text == "Bob")
+            {
+                MessageBox.Show("Yo");
+            }
+            //
+            else
+                MessageBox.Show("Else");
+        }
     }
 }
