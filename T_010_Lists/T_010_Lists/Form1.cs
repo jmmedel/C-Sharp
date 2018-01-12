@@ -16,5 +16,25 @@ namespace T_010_Lists
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {    // generic type of list string
+            List<String> Names = new List<string>();
+            Names.Add("Kagaya");
+            Names.Add("John");
+            MessageBox.Show(Names[0]);
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // list integer
+            List<int> number = new List<int>();
+            number.Add(5);
+            number.Add(4);
+            MessageBox.Show(number[0].ToString());
+
+        }
     }
 }
