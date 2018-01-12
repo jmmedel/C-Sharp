@@ -16,5 +16,22 @@ namespace T_011_For_And_Foreach
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {   // for loop
+            for (int i = 0; i < 5; i++)
+            {
+                MessageBox.Show("Hello" + i.ToString());
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {   // foreach you can loop 
+            string[] names = { "Kagaya", "John", "medel" };
+            foreach (var s in names)
+            {
+                MessageBox.Show(s);
+            }
+        }
     }
 }
