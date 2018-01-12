@@ -16,5 +16,10 @@ namespace T_001_Changing_Forms_Properties
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {   // this is how to show messagebox error;
+            MessageBox.Show("This is the message");
+        }
     }
 }
