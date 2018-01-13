@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T_018_Overloading_Methods_And_Enumarations", "T_018_Overloading_Methods_And_Enumarations\T_018_Overloading_Methods_And_Enumarations.csproj", "{8C42F6E7-1878-40AF-AD9F-09A77462FCF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C42F6E7-1878-40AF-AD9F-09A77462FCF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C42F6E7-1878-40AF-AD9F-09A77462FCF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C42F6E7-1878-40AF-AD9F-09A77462FCF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C42F6E7-1878-40AF-AD9F-09A77462FCF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1979835B-D132-4FFF-B554-B74C99B81D57}
+	EndGlobalSection
+EndGlobal
