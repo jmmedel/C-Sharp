@@ -16,5 +16,10 @@ namespace T_017_Access_Modifiers_Static
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MyClass.ShowMessage("Hello Worlds");
+        }
     }
 }
