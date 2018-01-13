@@ -18,7 +18,7 @@ namespace T_017_Access_Modifiers_Static
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {  // static class helper class
             MyClass.ShowMessage("Hello Worlds");
         }
     }
