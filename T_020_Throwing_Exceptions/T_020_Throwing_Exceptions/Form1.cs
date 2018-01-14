@@ -18,8 +18,17 @@ namespace T_020_Throwing_Exceptions
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {   
+            try
+            {
+                MyClass.Checkingstring("");
+            }
+            catch (Exception ex)
+            {
 
+                MessageBox.Show(ex.Message);
+            }
+            
         }
     }
 }
