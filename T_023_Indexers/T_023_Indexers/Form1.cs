@@ -16,5 +16,12 @@ namespace T_023_Indexers
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MyClass mc = new MyClass();
+            mc[1] = "Kagaya";
+            MessageBox.Show(mc[1]);
+        }
     }
 }
