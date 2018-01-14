@@ -32,7 +32,7 @@ namespace T_018_Overloading_Methods_And_Enumarations
         
         public  void Getday ()
         {
-            MessageBox.Show(x.ToString());
+            MessageBox.Show( "Sun = " + x.ToString());
         }
         // enumarations
         enum Days { Sun, Mon, Tue, Wed, Thu, Fri, Sat };
