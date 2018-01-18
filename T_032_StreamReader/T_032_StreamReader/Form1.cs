@@ -20,6 +20,20 @@ namespace T_032_StreamReader
 
         private void button1_Click(object sender, EventArgs e)
         {
+            OpenFileDialog ofd = new OpenFileDialog();
+            if(ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {   // read the file 
+                StreamReader sr = new StreamReader(File.OpenRead(ofd.FileName));
+                textBox1.Text = sr.ReadToEnd(); // read to end
+                //sr.BaseStream.Position = 0xC;
+                // byte[] buffer = new byte[3];
+                // sr.BaseStream.Read(buffer, 0, 3);
+                // foreach (byte mybte in buffer)
+                //    textBox1.Text += mybte.ToString("X") + " ";
+                // sr.Dispose();
+                 
+
+            }
 
         }
     }
