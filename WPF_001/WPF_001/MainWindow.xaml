@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_001"
         mc:Ignorable="d"
+        Loaded="Window_Loaded"
         Title="WPF" Height="800" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <!--get to use the indentation process to make easy to read  -->
     <Border Padding="10">
@@ -19,8 +20,8 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
             <!-- -->
-            <Button Grid.Column="0" Content="Apply" Margin="0,0,10,0" Click="Button_Click"/>
-            <Button Grid.Column="1" Content="Reset" Margin="0,0,0,0"/>
+            <Button x:Name="ApplyButton" Grid.Column="0" Content="Apply" Margin="0,0,10,0" Click="ApplyButton_Click"/>
+            <Button x:Name="ResetButton" Grid.Column="1" Content="Reset" Margin="0,0,0,0" Click="ResetButton_Click" />
             <Button Grid.Column="2" Content="Refresh" Margin="10,0,0,0"/>
             </Grid>
             <!--  Pulse propreties-->
@@ -28,7 +29,7 @@
             <TextBlock Text="Pluse Propreties" FontWeight="Bold" Margin="0,10" />
             <!-- Discription-->
             <TextBlock Text="Discription" FontWeight="Bold"  />
-            <TextBox Padding="0,2,0,0" />
+            <TextBox x:Name="DiscriptionText" Padding="0,2,0,0"  />
             <!-- Status and Revision-->
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -70,32 +71,32 @@
                 </Grid.ColumnDefinitions>
                 <!-- Column 0 -->
                 <StackPanel Grid.Column="0" Margin="0,0,10,0">
-                    <CheckBox Content="Weld" />
-                    <CheckBox Content="Assembly" />
-                    <CheckBox Content="Plasma" />
-                    <CheckBox Content="Laser" />
-                    <CheckBox Content="Purchase" />
+                    <CheckBox Checked="Checkbox_Cheked" x:Name="WeldCheckbox"  Content="Weld" />
+                    <CheckBox Checked="Checkbox_Cheked" x:Name="AssemblyCheckbox" Content="Assembly" />
+                    <CheckBox Checked="Checkbox_Cheked" x:Name="PlasmaCheckbox" Content="Plasma" />
+                    <CheckBox Checked="Checkbox_Cheked" x:Name="LaserCheckbox" Content="Laser" />
+                    <CheckBox Checked="Checkbox_Cheked" x:Name="PurchaseCheckbox" Content="Purchase" />
                 </StackPanel>
                 <!-- Column 1 -->
                 <StackPanel Grid.Column="1">
-                    <CheckBox Content="Lathe" />
-                    <CheckBox Content="Drili" />
-                    <CheckBox Content="Fold" />
-                    <CheckBox Content="Roll" />
-                    <CheckBox Content="Saw" />
+                    <CheckBox Checked="Checkbox_Cheked" x:Name="LatheCheckbox" Content="Lathe" />
+                    <CheckBox Checked="Checkbox_Cheked" x:Name="DriliCheckbox" Content="Drili" />
+                    <CheckBox Checked="Checkbox_Cheked" x:Name="FoldCheckbox" Content="Fold" />
+                    <CheckBox Checked="Checkbox_Cheked" x:Name="RollCheckbox" Content="Roll" />
+                    <CheckBox Checked="Checkbox_Cheked" x:Name="SawCheckbox" Content="Saw" />
                 </StackPanel>
 
             </Grid>
             <!-- Length-->
             <TextBlock Text="Length" FontWeight="Bold" Margin="0,10,0,0"  />
-            <TextBox Padding="0,2,0,0" />
+            <TextBox x:Name="LengthText" Padding="0,2,0,0" />
             <!-- Mass -->
             <TextBlock Text="Mass" FontWeight="Bold"  />
-            <TextBox Padding="0,2,0,0" IsReadOnly="True" Background="#eee" />
+            <TextBox x:Name="MassText" Padding="0,2,0,0" IsReadOnly="True" Background="#eee" />
 
             <!-- Finish -->
             <TextBlock Text="Finish" FontWeight="Bold"  />
-            <ComboBox Padding="0,2,0,0" SelectedIndex="0" >
+            <ComboBox x:Name="Finish_Dropdown" SelectionChanged="FinishDropdown_SelectionChanged" Padding="0,2,0,0" SelectedIndex="0" >
                 <ComboBoxItem>Painted</ComboBoxItem>
                 <ComboBoxItem>Not Painted</ComboBoxItem>
                 
@@ -109,7 +110,7 @@
             </ComboBox>
             <!-- Supplier Name-->
             <TextBlock Text="Supplier Name" FontWeight="Bold" Margin="0,10,0,0"  />
-            <TextBox Padding="0,2,0,0" />
+            <TextBox x:Name="Supplier_Name_TextBox" TextChanged="SupplierNameText_TextChanged" Padding="0,2,0,0" />
             <!-- Supplier Code-->
             <TextBlock Text="Supplier Code" FontWeight="Bold"  />
             <TextBox Padding="0,2,0,0" />
@@ -117,7 +118,7 @@
             <TextBlock Text="Additional info" FontWeight="Bold" Margin="0,10" />
             <!-- Discription-->
             <TextBlock Text="Note" FontWeight="Bold"  />
-            <TextBox Padding="0,2,0,0" />
+            <TextBox x:Name="NoteText" Padding="0,2,0,0" />
 
         </StackPanel>
     </Border>
