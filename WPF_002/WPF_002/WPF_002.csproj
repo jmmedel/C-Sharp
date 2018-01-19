@@ -93,5 +93,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\drive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\folder-closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\folder-open.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
