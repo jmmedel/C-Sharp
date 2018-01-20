@@ -28,7 +28,7 @@ namespace T_034_BinaryReader
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {
+        {   // Binary Reader
             BinaryReader br = new BinaryReader(File.OpenRead(path));
             //br.BaseStream.Position = 0x10;
 
