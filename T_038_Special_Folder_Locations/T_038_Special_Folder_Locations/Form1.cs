@@ -16,5 +16,21 @@ namespace T_038_Special_Folder_Locations
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {   // convert bool type true or false only
+            try
+            {
+                bool myBool = Convert.ToBoolean(textBox1.Text);
+                MessageBox.Show(myBool.ToString());
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("The conversion failed");
+            }
+           
+         
+        }
     }
 }
