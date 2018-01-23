@@ -1,140 +1,190 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using System.IO;
 
-namespace WPF_002
+namespace WpfTreeView
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        #region Contructor
+        #region Constructor
+
         /// <summary>
-        /// Default Contructor
+        /// Default constructor
         /// </summary>
         public MainWindow()
         {
             InitializeComponent();
-            
         }
+
         #endregion
-        #region Loaded
+
+        #region On Loaded
+
         /// <summary>
-        /// when the apllication first open
+        /// When the application first opens
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void Window_Loaded(object sender, RoutedEventArgs e)
-        {      
-            // Get Every logical drive on the machine
-            // Directory is on system.io
-             foreach (var drive in Directory.GetLogicalDrives())
+        {
+            // Get every logical drive on the machine
+            foreach (var drive in Directory.GetLogicalDrives())
             {
-                // create a new item for it
-
+                // Create a new item for it
                 var item = new TreeViewItem()
                 {
                     // Set the header
                     Header = drive,
-                    // and the full path
+                    // And the full path
                     Tag = drive
                 };
-               
-                // is the name of FolderView carefull to remember the folder
+
+                // Add a dummy item
                 item.Items.Add(null);
-                // listen out for item being expanded
+
+                // Listen out for item being expanded
                 item.Expanded += Folder_Expanded;
-                // Add it to the main tree-view !!!!!!
+
+                // Add it to the main tree-view
                 FolderView.Items.Add(item);
             }
         }
+
         #endregion
 
+        #region Folder Expanded
 
-        #region FolderExpanded
+        /// <summary>
+        /// When a folder is expanded, find the sub folders/files
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Folder_Expanded(object sender, RoutedEventArgs e)
         {
-            #region Initial Check
+            #region Initial Checks
 
-           
-            // sender get the sender
             var item = (TreeViewItem)sender;
-            // if the item only contains the dummy data
 
-            if (item.Items.Count != 1 && item.Items[0] != null)
+            // If the item only contains the dummy data
+            if (item.Items.Count != 1 || item.Items[0] != null)
                 return;
+
             // Clear dummy data
             item.Items.Clear();
 
+            // Get full path
             var fullPath = (string)item.Tag;
-            // Create a Black list for directories
-            // Try abd get Directories from the folder
-            # endregion 
 
-            #region Get Folder
+            #endregion
 
-            // Create a black lisr for files
+            #region Get Folders
+
+            // Create a blank list for directories
+            var directories = new List<string>();
+
+            // Try and get directories from the folder
+            // ignoring any issues doing so
+            try
+            {
+                var dirs = Directory.GetDirectories(fullPath);
+
+                if (dirs.Length > 0)
+                    directories.AddRange(dirs);
+            }
+            catch { }
+
+            // For each directory...
+            directories.ForEach(directoryPath =>
+            {
+                // Create directory item
+                var subItem = new TreeViewItem()
+                {
+                    // Set header as folder name
+                    Header = GetFileFolderName(directoryPath),
+                    // And tag as full path
+                    Tag = directoryPath
+                };
+
+                // Add dummy item so we can expand folder
+                subItem.Items.Add(null);
+
+                // Handle expanding
+                subItem.Expanded += Folder_Expanded;
+
+                // Add this item to the parent
+                item.Items.Add(subItem);
+            });
+
+            #endregion
+
+            #region Get Files
+
+            // Create a blank list for files
             var files = new List<string>();
-            // try and get files from the folder
-            // ignoring any issue doing so
+
+            // Try and get files from the folder
+            // ignoring any issues doing so
             try
             {
                 var fs = Directory.GetFiles(fullPath);
 
                 if (fs.Length > 0)
                     files.AddRange(fs);
-
             }
-            catch { } // create a catch here
+            catch { }
 
-          // for each file ....
-
-            files.ForEach(filePath => 
-            {   // create file item
-                var Subitem = new TreeViewItem()
-                {   // Set header as file name
+            // For each file...
+            files.ForEach(filePath =>
+            {
+                // Create file item
+                var subItem = new TreeViewItem()
+                {
+                    // Set header as file name
                     Header = GetFileFolderName(filePath),
-                    // and tag as full path
+                    // And tag as full path
                     Tag = filePath
                 };
 
-               
                 // Add this item to the parent
-                item.Items.Add(Subitem);
+                item.Items.Add(subItem);
             });
+
             #endregion
         }
-        #region Get_File
 
-        
+        #endregion
+
+        #region Helpers
+
         /// <summary>
         /// Find the file or folder name from a full path
         /// </summary>
-        /// <param name="directorypath"> The Full Path</param>
+        /// <param name="path">The full path</param>
         /// <returns></returns>
-        private object GetFileFolderName(string path)
+        public static string GetFileFolderName(string path)
         {
-           
+            // If we have no path, return empty
             if (string.IsNullOrEmpty(path))
                 return string.Empty;
-            // make all slashes back slashes
+
+            // Make all slashes back slashes
             var normalizedPath = path.Replace('/', '\\');
-            // find the last backslash in the path
+
+            // Find the last backslash in the path
             var lastIndex = normalizedPath.LastIndexOf('\\');
-            //if we dont Find a BackSlash return the path itself
+
+            // If we don't find a backslash, return the path itself
             if (lastIndex <= 0)
                 return path;
+
             // Return the name after the last back slash
             return path.Substring(lastIndex + 1);
-
-
         }
-        #endregion
-        #endregion
-        //44.31
 
+        #endregion
     }
 }

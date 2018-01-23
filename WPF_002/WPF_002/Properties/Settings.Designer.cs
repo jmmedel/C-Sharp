@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WPF_002.Properties
+namespace WpfTreeView.Properties
 {
 
 
