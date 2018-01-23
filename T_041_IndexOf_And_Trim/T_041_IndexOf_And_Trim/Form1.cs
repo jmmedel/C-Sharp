@@ -16,5 +16,18 @@ namespace T_041_IndexOf_And_Trim
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {   
+            string name = "John Seith";
+            string firstName = name.Substring(0, name.IndexOf(' '));
+            string Name = "        Kagaya          john";
+
+            MessageBox.Show(firstName);
+            // delete the space start trimstart
+            // delete the space end trimend
+            MessageBox.Show(Name.Trim());
+        }
+
     }
 }
