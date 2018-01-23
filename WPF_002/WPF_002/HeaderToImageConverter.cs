@@ -35,7 +35,8 @@ namespace WpfTreeView
             else if (new FileInfo(path).Attributes.HasFlag(FileAttributes.Directory))
                 image = "Images/folder-closed.png";
 
-            return new BitmapImage(new Uri($"pack://application:,,,/{image}"));
+            //return new BitmapImage(new Uri($"pack://application:,,,/{image}"));
+            return new BitmapImage(new Uri($"pack://application:,,,/Image/drive.png"));
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
