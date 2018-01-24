@@ -28,5 +28,20 @@ namespace T_045_Generating_Random_Number
             label6.Text = r.Next(1, 10).ToString();
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {   // using binary
+            byte[] buffer = new byte[5];
+            Random r = new Random();
+            r.NextBytes(buffer);
+            
+            label1.Text = BitConverter.ToString(buffer);
+            label2.Text = BitConverter.ToString(buffer);
+            label3.Text = BitConverter.ToString(buffer);
+            label4.Text = BitConverter.ToString(buffer);
+            label5.Text = BitConverter.ToString(buffer);
+            label6.Text = BitConverter.ToString(buffer);
+
+        }
     }
 }
