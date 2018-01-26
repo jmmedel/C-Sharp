@@ -29,6 +29,7 @@ namespace T_048_Directory_Class
                     MessageBox.Show(item);
                 }
             }
+
         }
 
         private void openDirectoryToolStripMenuItem_Click(object sender, EventArgs e)
@@ -68,6 +69,32 @@ namespace T_048_Directory_Class
 
 
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {   // create directory 
+            // you can crate delete ddirectory but i dont test it 
+            
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
+            if (fbd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                Directory.CreateDirectory(fbd.SelectedPath + "\\Kagaya");
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {   
+
+           // using move
+
+          
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {   //delete button 
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
+            if (fbd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                Directory.Delete(fbd.SelectedPath);
+            
         }
     }
 }
