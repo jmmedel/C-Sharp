@@ -52,5 +52,22 @@ namespace T_048_Directory_Class
                 MessageBox.Show(s);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
+            if (fbd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {   // Get the get creation time and return the date time
+                MessageBox.Show(Directory.GetCreationTime(fbd.SelectedPath).ToString(),"GetCreationTime");
+                // Get the last Access time 
+                MessageBox.Show(Directory.GetLastAccessTime(fbd.SelectedPath).ToString(), "GetLastAccessTime");
+                // get the write Access time
+                MessageBox.Show(Directory.GetLastWriteTime(fbd.SelectedPath).ToString(),"GetlastWritetime");
+                // GEt the parent
+                MessageBox.Show(Directory.GetParent(fbd.SelectedPath).ToString(),"Getparent");
+
+
+            }
+        }
     }
 }
