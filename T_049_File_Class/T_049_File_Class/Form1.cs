@@ -32,5 +32,21 @@ namespace T_049_File_Class
             if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 File.Delete(ofd.FileName);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {   
+            OpenFileDialog ofd = new OpenFileDialog();
+            if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                // this is my directory change it to use it 
+                File.Copy(ofd.FileName, "C:\\Users\\kagaya\\Desktop\\GG\\textnew.txt");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                // this is my directory change it to use it 
+                File.Move(ofd.FileName, "C:\\Users\\kagaya\\Desktop\\GG\\newtext\\textnew.txt");
+        }
     }
 }
