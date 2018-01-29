@@ -18,7 +18,14 @@ namespace T_050_Path_Class
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {   // Path_Class
+            OpenFileDialog ofd = new OpenFileDialog();
+            if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                MessageBox.Show(Path.GetDirectoryName(ofd.FileName));
+            MessageBox.Show(Path.GetFileName(ofd.FileName));
+            MessageBox.Show(Path.GetFileNameWithoutExtension(ofd.FileName));
+            MessageBox.Show(Path.HasExtension(ofd.FileName).ToString());
+
 
         }
     }
