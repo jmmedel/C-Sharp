@@ -17,20 +17,27 @@ namespace T_054_Threading
             InitializeComponent();
         }
         Thread t;
+        string mystring = "";
         private void button1_Click(object sender, EventArgs e)
         {   // start start the thread
-          t = new Thread(Freeze);
-            t.Start();
+             t = new Thread(Write);
+             t.Start();
+            while (t.IsAlive) ;
+             textBox1.Text = mystring;
         }
         // Example to freeze for sake of teaching threading
-        void Freeze()
+        void Write()
         {
-            for (; ; );
+            for(int i = 0; i < 1000; i++)
+            {
+                mystring += "Kagaya" + i.ToString() + "\r\n";
+            }
         }
 
         private void Form_Clossing(object sender, FormClosedEventArgs e)
         {   // abort 
             t.Abort();
         }
+
     }
 }
