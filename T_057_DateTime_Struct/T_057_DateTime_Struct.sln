@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T_057_DateTime_Struct", "T_057_DateTime_Struct\T_057_DateTime_Struct.csproj", "{A21098EC-8133-4420-AAE3-C3078A99098A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A21098EC-8133-4420-AAE3-C3078A99098A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A21098EC-8133-4420-AAE3-C3078A99098A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A21098EC-8133-4420-AAE3-C3078A99098A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A21098EC-8133-4420-AAE3-C3078A99098A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90CC2092-3782-4013-BDFB-1A0EFF82AA05}
+	EndGlobalSection
+EndGlobal
