@@ -16,5 +16,20 @@ namespace T_062_Color_Struct
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ColorDialog cd = new ColorDialog();
+            if(cd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                Color c = cd.Color;
+                  if (c.IsNamedColor)
+                  {
+                    // not all color and be change
+                    MessageBox.Show(c.ToKnownColor().ToString());
+                  }
+            }
+
+        }
     }
 }
