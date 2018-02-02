@@ -18,7 +18,10 @@ namespace T_057_DateTime_Struct
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {   //using datetime 
+            // im lazy im not doing nothing today
+            DateTime dt = new DateTime(1993, 10, 16);
+            MessageBox.Show(dt.ToString());
 
         }
     }
