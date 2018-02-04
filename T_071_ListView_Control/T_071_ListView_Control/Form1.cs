@@ -29,8 +29,6 @@ namespace T_071_ListView_Control
                 textBox2.Text = "";
                 textBox3.Text = "";
           
-           
-               
 
         }
 
