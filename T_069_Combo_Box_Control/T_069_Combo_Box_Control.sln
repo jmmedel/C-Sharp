@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T_069_Combo_Box_Control", "T_069_Combo_Box_Control\T_069_Combo_Box_Control.csproj", "{C01AF0C3-F052-414B-9F2C-70CC83CAC3CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C01AF0C3-F052-414B-9F2C-70CC83CAC3CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C01AF0C3-F052-414B-9F2C-70CC83CAC3CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C01AF0C3-F052-414B-9F2C-70CC83CAC3CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C01AF0C3-F052-414B-9F2C-70CC83CAC3CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FCBCF64C-BD09-4166-8720-C6E451AED688}
+	EndGlobalSection
+EndGlobal
