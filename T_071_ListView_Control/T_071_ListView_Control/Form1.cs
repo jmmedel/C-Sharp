@@ -33,5 +33,13 @@ namespace T_071_ListView_Control
                
 
         }
+
+        private void getNameofItemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(listView1.SelectedItems.Count != 0)
+            {
+                MessageBox.Show(listView1.SelectedItems[0].SubItems[0].Text);
+            }
+        }
     }
 }
