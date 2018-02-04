@@ -19,6 +19,7 @@ namespace T_071_ListView_Control
 
         private void button1_Click(object sender, EventArgs e)
         {   // make a check if empty or null
+            // part 3 tomorrow
             ListViewItem item1;
             
                 item1 = new ListViewItem(textBox1.Text);
@@ -33,7 +34,8 @@ namespace T_071_ListView_Control
         }
 
         private void getNameofItemToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        {   // using contentmenustrip 
+            // rightclick 
             if(listView1.SelectedItems.Count != 0)
             {
                 MessageBox.Show(listView1.SelectedItems[0].SubItems[0].Text);
