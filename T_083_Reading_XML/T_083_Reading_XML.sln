@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T_083_Reading_XML", "T_083_Reading_XML\T_083_Reading_XML.csproj", "{E5140411-1CCF-4FAE-B7F5-D6F0732C2608}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5140411-1CCF-4FAE-B7F5-D6F0732C2608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5140411-1CCF-4FAE-B7F5-D6F0732C2608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5140411-1CCF-4FAE-B7F5-D6F0732C2608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5140411-1CCF-4FAE-B7F5-D6F0732C2608}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CEBEE5E7-6BB1-4E11-97BB-C783FCD9E014}
+	EndGlobalSection
+EndGlobal
