@@ -16,5 +16,10 @@ namespace T_082_TrackBar_And_NumericUpDown_Control
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(trackBar1.Value.ToString());
+        }
     }
 }
