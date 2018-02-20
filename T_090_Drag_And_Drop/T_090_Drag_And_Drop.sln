@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T_090_Drag_And_Drop", "T_090_Drag_And_Drop\T_090_Drag_And_Drop.csproj", "{D277AE2E-2450-4804-8A05-D7C2594D9E0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D277AE2E-2450-4804-8A05-D7C2594D9E0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D277AE2E-2450-4804-8A05-D7C2594D9E0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D277AE2E-2450-4804-8A05-D7C2594D9E0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D277AE2E-2450-4804-8A05-D7C2594D9E0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF74AF0B-8074-4685-AF61-F08D417846B0}
+	EndGlobalSection
+EndGlobal
