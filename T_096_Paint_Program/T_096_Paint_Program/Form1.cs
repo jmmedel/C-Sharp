@@ -111,5 +111,20 @@ namespace T_096_Paint_Program
         {
             DrawCircle = false;
         }
+
+        private void panel1_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.All;
+        }
+
+        private void panel1_DragDrop(object sender, DragEventArgs e)
+        {
+            string[] imagepaths = (string[])e.Data.GetData(DataFormats.FileDrop);
+            foreach (string path in imagepaths)
+            {
+                g.DrawImage(Image.FromFile(path), new Point(0, 0));
+            }
+
+        }
     }
 }
