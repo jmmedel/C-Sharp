@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<People>
+  <Person>
+    <Name>Bob  </Name>
+    <Age> 24</Age>
+    <Email>jm_sasuke@gmail.com</Email>
+  </Person>
+  <Person>
+    <Name>Kagaya</Name>
+    <Age> 24</Age>
+    <Email>jm_sasuke@gmail.com</Email>
+  </Person>
+  <Person>
+    <Name>Medel</Name>
+    <Age> 24</Age>
+    <Email>jm_sasuke@gmail.com</Email>
+  </Person>
+</People>
