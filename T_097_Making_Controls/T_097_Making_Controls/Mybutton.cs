@@ -16,6 +16,7 @@ namespace T_097_Making_Controls
         {
             InitializeComponent();
         }
+        string text = "";
         protected override void OnPaint(PaintEventArgs e)
         {
             SolidBrush s = new SolidBrush(Color.FromKnownColor(KnownColor.Control));
@@ -23,13 +24,18 @@ namespace T_097_Making_Controls
             g.FillRectangle(s, 0, 0, this.Width, this.Height);
             s.Color = Color.FromKnownColor(KnownColor.ControlLight);
             g.FillRectangle(s, 0, this.Height / 2, this.Width, this.Height / 2);
-            label1.Location = new Point((this.Width / 2)- (label1.Width / 2), (this.Height / 2)-(label1.Height / 2));
+            // PointF fpoint = new Point((this.Width / 2)- (label1.Width / 2), (this.Height / 2)-(label1.Height / 2));
+            PointF fpoint = new Point((this.Width / 2) - (text.Length), (this.Height / 2) - (text.Length));
+            FontFamily ff = new FontFamily("Arial");
+            Font f = new System.Drawing.Font(ff, 8);
+            s.Color = Color.Black;
+            g.DrawString(text, f, s, fpoint);
         }
 
         public string ButtonText
         {
-            get { return label1.Text; }
-            set { label1.Text = value; }
+            get { return text; }
+            set { text = value; }
         }
 
     }
