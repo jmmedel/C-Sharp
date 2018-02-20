@@ -37,6 +37,10 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Name = "Mybutton";
             this.Size = new System.Drawing.Size(71, 27);
+            this.Click += new System.EventHandler(this.Mybutton_Click);
+            this.MouseEnter += new System.EventHandler(this.Mybutton_MouseEnter);
+            this.MouseLeave += new System.EventHandler(this.Mybutton_MouseLeave);
+            this.MouseHover += new System.EventHandler(this.Mybutton_MouseHover);
             this.ResumeLayout(false);
 
         }
