@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T_093_Drawing_With_Pen_Class", "T_093_Drawing_With_Pen_Class\T_093_Drawing_With_Pen_Class.csproj", "{D17F68E3-DF65-44D4-9AEB-276ADA6483EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D17F68E3-DF65-44D4-9AEB-276ADA6483EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D17F68E3-DF65-44D4-9AEB-276ADA6483EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D17F68E3-DF65-44D4-9AEB-276ADA6483EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D17F68E3-DF65-44D4-9AEB-276ADA6483EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9855B09-19FD-42CA-A919-67EC47D9CC88}
+	EndGlobalSection
+EndGlobal
