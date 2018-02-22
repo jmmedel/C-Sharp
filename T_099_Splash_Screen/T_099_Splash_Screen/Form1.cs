@@ -16,5 +16,11 @@ namespace T_099_Splash_Screen
         {
             InitializeComponent();
         }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 }
