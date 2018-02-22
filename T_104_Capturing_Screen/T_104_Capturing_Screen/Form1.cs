@@ -18,11 +18,19 @@ namespace T_104_Capturing_Screen
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {   // start the threads
+            Thread t = new Thread(blah);
+            t.Start();
+        }
+        void blah()
         {
-            Bitmap b = new Bitmap(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
-            Graphics g = Graphics.FromImage(b);
-            g.CopyFromScreen
-
+            for (; ; ) {
+                Bitmap b = new Bitmap(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+                Graphics g = Graphics.FromImage(b);
+                g.CopyFromScreen(Point.Empty, Point.Empty, Screen.PrimaryScreen.WorkingArea.Size);
+                pictureBox1.Image = b;
+            }
+            
         }
     }
 }
