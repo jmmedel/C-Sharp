@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T_100_Making_DLL", "T_100_Making_DLL\T_100_Making_DLL.csproj", "{82C76F67-25F9-453F-8B6E-052838B11B25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDLL", "MyDLL\MyDLL.csproj", "{C1DFECFB-E587-4321-8169-E718B45CBF3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82C76F67-25F9-453F-8B6E-052838B11B25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82C76F67-25F9-453F-8B6E-052838B11B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82C76F67-25F9-453F-8B6E-052838B11B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82C76F67-25F9-453F-8B6E-052838B11B25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1DFECFB-E587-4321-8169-E718B45CBF3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1DFECFB-E587-4321-8169-E718B45CBF3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1DFECFB-E587-4321-8169-E718B45CBF3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1DFECFB-E587-4321-8169-E718B45CBF3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91D49ACA-7FED-440D-8D4E-D0F44E31C215}
+	EndGlobalSection
+EndGlobal
