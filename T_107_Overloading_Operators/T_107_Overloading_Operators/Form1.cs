@@ -23,8 +23,14 @@ namespace T_107_Overloading_Operators
             item1.Price = 4;
             Item item2 = new Item();
             item2.Price = 6;
+            Item item4 = new Item();
+            item4.Price = 6;
             Item item3 = item1 + item2;
             MessageBox.Show(item3.Price.ToString());
+            if(item4 == item2)
+            {
+                MessageBox.Show("This item are the same");
+            }
         }
     }
 
@@ -42,7 +48,18 @@ namespace T_107_Overloading_Operators
             i3.Price = i1.Price + i2.Price;
             return i3;
         }
+        public static bool operator ==(Item i1, Item i2)
+        {
+            return (i1.Price == i2.Price) ? true : false;
+        }
 
+        public static bool operator !=(Item i1, Item i2)
+        {
+            return (i1.Price != i2.Price) ? true : false;
+        }
     }
+   
 
+   
+        
 }
