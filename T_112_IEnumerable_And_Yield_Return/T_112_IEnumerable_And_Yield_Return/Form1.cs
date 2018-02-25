@@ -16,5 +16,10 @@ namespace T_112_IEnumerable_And_Yield_Return
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
