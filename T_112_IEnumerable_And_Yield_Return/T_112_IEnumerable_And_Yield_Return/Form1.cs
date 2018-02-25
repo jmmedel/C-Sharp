@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace T_112_IEnumerable_And_Yield_Return
 {
@@ -19,7 +20,16 @@ namespace T_112_IEnumerable_And_Yield_Return
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // testing i hav eeeror in github
+            foreach (var item in Getnnumbers(0,10))
+            {
+                MessageBox.Show(item.ToString());
+            } 
+        }
+
+        IEnumerable Getnnumbers(int min, int max)
+        {
+            for (; min <= max; min++)
+                yield return min;
         }
     }
 }
