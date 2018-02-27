@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T_000_06_Constants_And_Literals", "T_000_06_Constants_And_Literals\T_000_06_Constants_And_Literals.csproj", "{0391526C-3F87-4900-B5B2-271CB2BA49FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0391526C-3F87-4900-B5B2-271CB2BA49FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0391526C-3F87-4900-B5B2-271CB2BA49FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0391526C-3F87-4900-B5B2-271CB2BA49FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0391526C-3F87-4900-B5B2-271CB2BA49FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3CB8DA4-19B5-4C31-A569-F24F5870F5B8}
+	EndGlobalSection
+EndGlobal
