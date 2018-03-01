@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace T_009_WPF_Controls_Buttons
+namespace T_010_WPF_Controls_Calendar
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,11 +23,6 @@ namespace T_009_WPF_Controls_Buttons
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("You have cliked the button");
         }
     }
 }
