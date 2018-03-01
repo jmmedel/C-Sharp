@@ -12,8 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Controls;
-namespace T_002_WPF_Without_XAML
+
+namespace T_003_WPF_Elements_Tree
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,21 +23,6 @@ namespace T_002_WPF_Without_XAML
         public MainWindow()
         {
             InitializeComponent();
-            // Create the StackPanel 
-            StackPanel stackPanel = new StackPanel();
-            this.Content = stackPanel;
-
-            // Create the Button 
-            Button button = new Button();
-            button.Content = "Click Me";
-            button.HorizontalAlignment = HorizontalAlignment.Left;
-            button.Margin = new Thickness(150);
-            button.VerticalAlignment = VerticalAlignment.Top;
-            button.Width = 75;
-            stackPanel.Children.Add(button);
         }
-
     }
-    
-
 }
