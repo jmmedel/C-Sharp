@@ -5,8 +5,52 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:T_011_WPF_Controls_CheckBox"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="604">
+    <!-- WPF - Checkbox
+    A checkbox is a control that a user can select (check) or clear (uncheck). It provides a list of options that a user can select, such as a list of settings to apply to an application. The hierarchical inheritance of Checkbox class is as follows −
+    Commonly Used Properties of CheckBox
+Given below are the most commonly used properties of CheckBox.
+Commonly Used Methods of CheckBox
+Given below are the most commonly used methods of CheckBox.
+Commonly Used Events of CheckBox
+Given below are the most commonly used events of CheckBox.
+Example
+Let’s create a new WPF project with the name WPFCheckBoxControl.
+
+Drag two checkboxes and two textboxes from a toolbox and set the following properties in the properties window.
+
+Controls	Property	Value
+Checkbox1	Content	Two States
+Name	checkBox1
+Width	90
+Checkbox2	Content	Three States
+Name	checkBox2
+Width	90
+textbox1	Name	textBox1
+Width	300
+Textbox2	Name	textBox2
+Width	300
+Now switch to XAML window in which you will see the XAML tags for check boxes and text boxes.
+
+Add some more properties and selection event as shown in the following XAML code.
+    
+    -->
     <Grid>
-        
+        <CheckBox x:Name = "checkBox1" Content = "Two States" HorizontalAlignment = "Left" 
+         Margin = "80,70,0,0" VerticalAlignment = "Top" Checked = "HandleCheck" 
+         Unchecked = "HandleUnchecked" Width = "90"/>
+
+        <CheckBox x:Name = "checkBox2" Content = "Three States" 
+         HorizontalAlignment = "Left" Margin = "80,134,0,0" VerticalAlignment = "Top" 
+         Width = "90" IsThreeState = "True" Indeterminate = "HandleThirdState" 
+         Checked = "HandleCheck" Unchecked = "HandleUnchecked"/>
+
+        <TextBox x:Name = "textBox1" HorizontalAlignment = "Left" 
+         Height = "23" Margin = "236,68,0,0" TextWrapping = "Wrap"
+         VerticalAlignment = "Top" Width = "300"/>
+
+        <TextBox x:Name = "textBox2" HorizontalAlignment = "Left"
+         Height = "23" Margin = "236,135,0,0" TextWrapping = "Wrap" 
+         VerticalAlignment = "Top" Width = "300"/>
     </Grid>
 </Window>
