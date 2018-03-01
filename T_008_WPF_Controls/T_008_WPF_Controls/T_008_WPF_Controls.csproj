@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{93B2D099-2A5F-447B-A25E-FD82D75FADCF}</ProjectGuid>
+    <ProjectGuid>{5780F4F1-362E-45E9-9D0A-BFA5C41F7B35}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>T_007_Custom_Routed_Events</RootNamespace>
-    <AssemblyName>T_007_Custom_Routed_Events</AssemblyName>
+    <RootNamespace>T_008_WPF_Controls</RootNamespace>
+    <AssemblyName>T_008_WPF_Controls</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -66,13 +66,8 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Themes\Generic.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyCustomControl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

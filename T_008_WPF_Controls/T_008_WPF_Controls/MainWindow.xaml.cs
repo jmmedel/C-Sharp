@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace T_007_Custom_Routed_Events
+namespace T_008_WPF_Controls
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,11 +23,6 @@ namespace T_007_Custom_Routed_Events
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void MyCustomControl_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("It is the custom routed event of your custom control");
         }
     }
 }

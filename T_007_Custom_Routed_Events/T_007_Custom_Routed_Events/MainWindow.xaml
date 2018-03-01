@@ -6,7 +6,25 @@
         xmlns:local="clr-namespace:T_007_Custom_Routed_Events"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <!-- 
+    Custom Routed Events
+In .NET framework, custom routed event can also be defined. You need to follow the steps given below to define a custom routed event in C#.
+
+Declare and register your routed event with system call RegisterRoutedEvent.
+
+Specify the Routing Strategy, i.e. Bubble, Tunnel, or Direct.
+
+Provide the event handler.
+
+Let’s take an example to understand more about custom routed events. Follow the steps given below −
+
+Create a new WPF project with WPFCustomRoutedEvent
+
+Right click on your solution and select Add > New Item...
+
+The following dialog will open, now select Custom Control (WPF) and name it MyCustomControl.
+    -->
     <Grid>
-        
+        <local:MyCustomControl Click = "MyCustomControl_Click" />
     </Grid>
 </Window>
