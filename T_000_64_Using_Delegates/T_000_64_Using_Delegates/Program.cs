@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace T_000_64_Using_Delegates
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        }
+    }
+}
