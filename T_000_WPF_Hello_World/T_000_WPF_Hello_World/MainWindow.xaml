@@ -1,0 +1,19 @@
+﻿<Window x:Class="T_000_WPF_Hello_World.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T_000_WPF_Hello_World"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <!--By default, a Grid is set as the first element after page.
+Let’s go to the toolbox and drag a TextBlock to the design window.
+    -->
+    <Grid>
+        <TextBlock x:Name="textblock" HorizontalAlignment="Left"
+                   Margin="235,143,0,0" TextWrapping="Wrap" Text="Hello Wrold"
+                   VerticalAlignment="Top" Height="44" Width="102"/>
+
+
+    </Grid>
+</Window>
