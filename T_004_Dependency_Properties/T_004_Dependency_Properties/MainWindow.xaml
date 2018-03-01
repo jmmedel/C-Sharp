@@ -6,7 +6,60 @@
         xmlns:local="clr-namespace:T_004_Dependency_Properties"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <!-- 
+    WPF - Dependency Properties
+    In WPF applications, dependency property is a specific type of property which extends the CLR property. It takes the advantage of specific functionalities available in the WPF property system.
+
+A class which defines a dependency property must be inherited from the DependencyObject class. Many of the UI controls class which are used in XAML are derived from the DependencyObject class and they support dependency properties, e.g. Button class supports the IsMouseOver dependency property.
+
+The following XAML code creates a button with some properties.
+    
+    -->
     <Grid>
-        
+        <Button Height="40" Width="175" Margin="10" Content="Dependecy Property">
+            <Button.Style>
+                <Style TargetType = "{x:Type Button}">
+                    <Style.Triggers>
+
+                        <Trigger Property = "IsMouseOver" Value = "True">
+                            <Setter Property = "Foreground" Value = "Red" />
+                        </Trigger>
+
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <!--
+        The x:Type markup extension in XAML has a similar functionality like typeof() in C#. It is used when attributes are specified which take the type of the object such as <Style TargetType = "{x:Type Button}">
+
+When the above code is compiled and executed, you would get the following MainWindow. When the mouse is over the button, it will change the foreground color of a button. When the mouse leaves the button, it changes back to its original color.
+        Why We Need Dependency Properties
+Dependency property gives you all kinds of benefits when you use it in your application. Dependency Property can used over a CLR property in the following scenarios −
+
+If you want to set the style
+If you want data binding
+If you want to set with a resource (a static or a dynamic resource)
+If you want to support animation
+Basically, Dependency Properties offer a lot of functionalities that you won’t get by using a CLR property.
+
+The main difference between dependency properties and other CLR properties are listed below −
+
+CLR properties can directly read/write from the private member of a class by using getter and setter. In contrast, dependency properties are not stored in local object.
+
+Dependency properties are stored in a dictionary of key/value pairs which is provided by the DependencyObject class. It also saves a lot of memory because it stores the property when changed. It can be bound in XAML as well.
+
+Custom Dependency Properties
+In .NET framework, custom dependency properties can also be defined. Follow the steps given below to define custom dependency property in C#.
+
+Declare and register your dependency property with system call register.
+
+Provide the setter and getter for the property.
+
+Define a static handler which will handle any changes that occur globally
+
+Define an instance handler which will handle any changes that occur to that particular instance.
+
+The following C# code defines a dependency property to set the SetText property of the user control.
+        -->
     </Grid>
 </Window>
