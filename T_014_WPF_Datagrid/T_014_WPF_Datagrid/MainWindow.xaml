@@ -28,7 +28,7 @@ The following example shows how to display data in a DataGrid. Given below is th
     -->
     <Window.Resources>
         <ObjectDataProvider x:Key = "myEnum" MethodName = "GetValues" 
-         ObjectType = "{x:Type core:Enum}">
+         ObjectType = "{x:Type x:ArrayExtension}">
 
             <ObjectDataProvider.MethodParameters>
                 <x:TypeExtension Type = "local:Party" />
