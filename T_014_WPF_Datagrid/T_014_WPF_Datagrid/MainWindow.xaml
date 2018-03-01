@@ -6,7 +6,50 @@
         xmlns:local="clr-namespace:T_014_WPF_Datagrid"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <!--  WPF - Datagrid
+    A DataGrid is a control that displays data in a
+    customizable grid. It provides a flexible way to
+    display a collection of data in rows and columns. 
+    The hierarchical inheritance of DataGrid class is
+    as follows −
+    Commonly Used Properties of DataGrid
+Given below are the most commonly used properties of DataGrid.
+Commonly Used Methods of DataGrid
+Given below are the most commonly used methods of DataGrid.
+Commonly Used Events of DataGrid
+Given below are the most commonly used events of DataGrid.
+Example
+Let’s create a new WPF project with WPFDataGridControl name.
+
+Drag Data grid from a toolbox.
+
+The following example shows how to display data in a DataGrid. Given below is the XAML code in which two data grids are created with a set of properties and events.
+    
+    -->
+    <Window.Resources>
+        <ObjectDataProvider x:Key = "myEnum" MethodName = "GetValues" 
+         ObjectType = "{x:Type core:Enum}">
+
+            <ObjectDataProvider.MethodParameters>
+                <x:TypeExtension Type = "local:Party" />
+            </ObjectDataProvider.MethodParameters>
+
+        </ObjectDataProvider>
+    </Window.Resources>
+
+
     <Grid>
-        
+        <DataGrid Name = "dataGrid" AlternatingRowBackground = "LightBlue"  
+         AlternationCount = "2" AutoGenerateColumns = "False">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header = "Name" Binding = "{Binding Name}" />
+                <DataGridTextColumn Header = "Title" Binding = "{Binding Title}" />
+                <DataGridCheckBoxColumn Header = "ReElected?" Binding = "{Binding WasReElected}"/>
+                <DataGridComboBoxColumn Header = "Party" SelectedItemBinding = "{Binding Affiliation}" 
+               ItemsSource = "{Binding Source = {StaticResource myEnum}}" />
+            </DataGrid.Columns>
+
+        </DataGrid>
     </Grid>
 </Window>
