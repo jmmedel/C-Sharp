@@ -4,9 +4,61 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:T_010_WPF_Controls_Calendar"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <!-- 
+    WPF - Calendar
+    Calendar is a control that enables a user to select a date by using a visual calendar display. It provides some basic navigation using either the mouse or keyboard. The hierarchical inheritance of Calendar class is as follows −
+
+Hierarchical of Calendar
+Commonly Used Properties of Calendar Class
+Given below are the most commonly used properties of Calendar.
+Commonly Used Methods of Calendar Class
+Given below are the most commonly used methods of Calendar.
+Commonly Used Events of Calendar Class
+Given below are the most commonly used events of Calendar.
+Example
+Let’s create a new WPF project with WPFCalenderControl name.
+
+Drag the calendar control from a toolbox and change the background color in the properties window.
+
+Now switch to XAML window in which you will see the XAML tags for calendar and its background.
+
+Add some more properties to set the blackouts dates and selection event, as shown in the following XAML code.
+    -->
     <Grid>
-        
+        <Calendar Margin = "20" SelectionMode = "MultipleRange"
+         IsTodayHighlighted = "false" DisplayDate = "1/1/2015" 
+         DisplayDateEnd = "1/31/2015" SelectedDatesChanged = "Calendar_SelectedDatesChanged" xml:lang ="clr-namespace:System;assembly = mscorlib">
+            <Calendar.BlackoutDates>
+                <CalendarDateRange Start = "1/2/2015" End = "1/4/2015"/>
+                <CalendarDateRange Start = "1/9/2015" End = "1/9/2015"/>
+                <CalendarDateRange Start = "1/16/2015" End = "1/16/2015"/>
+                <CalendarDateRange Start = "1/23/2015" End = "1/25/2015"/>
+                <CalendarDateRange Start = "1/30/2015" End = "1/30/2015"/>
+            </Calendar.BlackoutDates>
+
+            <Calendar.SelectedDates>
+                <system:DateTime>1/5/2015</system:DateTime>
+                
+                <system:DateTime>1/14/2015</system:DateTime>
+                <system:DateTime>1/13/2015</system:DateTime>
+                <system:DateTime>1/15/2015</system:DateTime>
+                <system:DateTime>1/27/2015</system:DateTime>
+                <system:DateTime>4/2/2015</system:DateTime>
+            </Calendar.SelectedDates>
+
+            <Calendar.Background>
+                <LinearGradientBrush EndPoint = "0.5,1" StartPoint = "0.5,0">
+                    <GradientStop Color = "#FFE4EAF0" Offset = "0" />
+                    <GradientStop Color = "#FFECF0F4" Offset = "0.16" />
+                    <GradientStop Color = "#FFFCFCFD" Offset = "0.16" />
+                    <GradientStop Color = "#FFD80320" Offset = "1" />
+                </LinearGradientBrush>
+            </Calendar.Background>
+        </Calendar>
+
+
     </Grid>
 </Window>

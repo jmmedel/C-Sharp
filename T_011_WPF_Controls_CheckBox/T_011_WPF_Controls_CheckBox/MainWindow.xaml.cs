@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace T_010_WPF_Controls_Calendar
+namespace T_011_WPF_Controls_CheckBox
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,17 +23,6 @@ namespace T_010_WPF_Controls_Calendar
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void Calendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var calendar = sender as Calendar;
-
-            if (calendar.SelectedDate.HasValue)
-            {
-                DateTime date = calendar.SelectedDate.Value;
-                this.Title = date.ToShortDateString();
-            }
         }
     }
 }
