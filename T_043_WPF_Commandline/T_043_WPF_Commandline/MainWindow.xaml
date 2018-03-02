@@ -6,7 +6,26 @@
         xmlns:local="clr-namespace:T_043_WPF_Commandline"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <!-- 
+    WPF - Command Line
+    Command line argument is a mechanism where a user can pass a set of parameters or values to a WPF application when it is executed. These arguments are very important to control an application from outside, for example, if you want to open a Word document from the command prompt, then you can use this command “C:\> start winword word1.docx” and it will open word1.docx document.
+
+Command line arguments are handled in Startup function. Following is a simple example which shows how to pass command line arguments to a WPF application. Let’s create a new WPF application with the name WPFCommandLine.
+
+Drag one textbox from the toolbox to the design window.
+
+In this example, we will pass a txt file path to our application as command line parameter.
+
+The program will read the txt file and then write all the text on the text box.
+
+The following XAML code creates a textbox and initializes it with some properties.
+    
+    -->
+
     <Grid>
-        
+        <TextBox x:Name = "textBox" HorizontalAlignment = "Left"  
+         Height = "180" Margin = "100" TextWrapping = "Wrap" 
+         VerticalAlignment = "Top" Width = "300"/>
     </Grid>
+
 </Window>

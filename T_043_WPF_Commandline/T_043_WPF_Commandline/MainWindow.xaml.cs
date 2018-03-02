@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using System.IO;
 namespace T_043_WPF_Commandline
 {
     /// <summary>
@@ -23,6 +23,26 @@ namespace T_043_WPF_Commandline
         public MainWindow()
         {
             InitializeComponent();
+            String[] args = App.Args;
+
+            try
+            {
+                // Open the text file using a stream reader. 
+                using (StreamReader sr = new StreamReader(args[0]))
+                {
+                    // Read the stream to a string, and write  
+                    // the string to the text box 
+                    String line = sr.ReadToEnd();
+                    textBox.AppendText(line.ToString());
+                    textBox.AppendText("\n");
+                }
+            }
+            catch (Exception e)
+            {
+                textBox.AppendText("The file could not be read:");
+                textBox.AppendText("\n");
+                textBox.AppendText(e.Message);
+            }
         }
     }
 }
