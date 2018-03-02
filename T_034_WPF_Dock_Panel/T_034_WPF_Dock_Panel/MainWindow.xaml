@@ -1,0 +1,40 @@
+﻿<Window x:Class="T_034_WPF_Dock_Panel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T_034_WPF_Dock_Panel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <!-- 
+    WPF - DockPanel
+    DockPanel defines an area to arrange child 
+    elements relative to each other, either horizontally
+    or vertically. With DockPanel you can easily dock child 
+    elements to top, bottom, right, left and center using the 
+    Dock property.
+
+With LastChildFill property, the last child element 
+    fill the remaining space regardless of any other 
+    dock value when set for that element. The hierarchical 
+    inheritance of DockPanel class is as follows −
+    Commonly Used Properties of DockPanel
+Given below are the most commonly used properties of DockPanel.
+Commonly Used Methods of DockPanel
+Given below are the most commonly used methods of DockPanel.
+Example
+The following example shows how to add child elements into a
+    DockPanel. The following XAML implementation creates buttons
+    inside a DockPanel.
+    
+    -->
+    <Grid>
+        <DockPanel LastChildFill = "True">
+            <Button Content = "Top" DockPanel.Dock = "Top" Click = "Click_Me" />
+            <Button Content = "Bottom" DockPanel.Dock = "Bottom" Click = "Click_Me" />
+            <Button Content = "Left" Click = "Click_Me" />
+            <Button Content = "Right" DockPanel.Dock = "Right" Click = "Click_Me" />
+            <Button Content = "Center" Click = "Click_Me" />
+        </DockPanel>
+    </Grid>
+</Window>

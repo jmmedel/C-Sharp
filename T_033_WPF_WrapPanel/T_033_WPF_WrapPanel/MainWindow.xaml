@@ -1,0 +1,36 @@
+﻿<Window x:Class="T_033_WPF_WrapPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T_033_WPF_WrapPanel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <!-- WPF - WrapPanel
+    In WrapPanel, child elements are positioned in sequential order, from left to right or from top to bottom based on the orientation property. The only difference between StackPanel and WrapPanel is that it doesn’t stack all the child elements in a single line; it wraps the remaining elements to another line if there is no space left.
+
+WrapPanel is mostly used for tabs or menu items. The hierarchical inheritance of WrapPanel class is as follows −
+
+Hierarchical of WrapPanel
+Commonly Used Properties of WrapPanel
+Given below are the most commonly used properties of WrapPanel.
+Example
+The following example shows how to add child elements into a WrapPanel. 
+    Here is the XAML implementation in which Text Blocks and Text Boxes are created 
+    inside a WrapPanel in horizontal direction.
+    
+    -->
+    <Grid>
+        
+        <WrapPanel Orientation = "Horizontal">
+            <TextBlock Text = "Fist Name" Width = "60" Height = "20" Margin = "5" />
+            <TextBox  Width = "200" Height = "20" Margin = "5" />
+            <TextBlock Text = "Last Name" Width = "60" Height = "20" Margin = "5" />
+            <TextBox  Width = "200" Height = "20" Margin = "5"/>
+            <TextBlock Text = "Age" Width = "60" Height = "20" Margin = "5" />
+            <TextBox  Width = "60" Height = "20" Margin = "5" />
+            <TextBlock Text = "Title" Width = "60" Height = "20" Margin = "5" />
+            <TextBox  Width = "200" Height = "20" Margin = "5" />
+        </WrapPanel>
+    </Grid>
+</Window>

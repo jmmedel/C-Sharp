@@ -5,8 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:T_032_WPF_StackPanel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="604">
+    <!-- 
+    WPF - StackPanel
+    Stack panel is a simple and useful 
+    layout panel in XAML. In stack panel, 
+    child elements can be arranged in a single 
+    line, either horizontally or vertically, based 
+    on the orientation property. It is often used whenever
+    any kind of list is to be created. The hierarchical inheritance
+    of StackPanel class is as follows −
+    Commonly Used Properties of StackPanel
+Given below are the most commonly used properties of StackPanel.
+Example
+The following example shows how to add child elements into a StackPanel.
+    The following XAML implementation creates buttons inside a StackPanel
+    with some properties.
+    
+    -->
     <Grid>
-        
+        <StackPanel Orientation = "Vertical">
+            <Button x:Name = "button" Content = "Button" Margin = "10" Width = "120" Height = "30" />
+            <Button x:Name = "button1" Content = "Button" Margin = "10" Width = "120" Height = "30" />
+            <Button x:Name = "button2" Content = "Button" Margin = "10" Width = "120" Height = "30" />
+            <Button x:Name = "button3" Content = "Button" Margin = "10" Width = "120" Height = "30" />
+        </StackPanel>
+        <StackPanel Orientation = "Horizontal" Margin="0,200,0,0">
+            <Button x:Name = "butto" Content = "Button" Margin = "10" Width = "120" Height = "30" />
+            <Button x:Name = "butto1" Content = "Button" Margin = "10" Width = "120" Height = "30" />
+            <Button x:Name = "butto2" Content = "Button" Margin = "10" Width = "120" Height = "30" />
+            <Button x:Name = "butto3" Content = "Button" Margin = "10" Width = "120" Height = "30" />
+        </StackPanel>
     </Grid>
 </Window>
