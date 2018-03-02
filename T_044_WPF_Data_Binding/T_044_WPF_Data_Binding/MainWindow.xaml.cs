@@ -16,13 +16,49 @@ using System.Windows.Shapes;
 namespace T_044_WPF_Data_Binding
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// 
+    /// One-Way Data Binding
+    /// 
     /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+        Person person = new Person { Name = "Salman", Age = 26 };
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string message = person.Name + " is " + person.Age;
+            MessageBox.Show(message);
+        }
+
+    }
+
+    public class Person
+    {
+
+        private string nameValue;
+
+        public string Name
+        {
+            get { return nameValue; }
+            set { nameValue = value; }
+        }
+
+        private double ageValue;
+
+        public double Age
+        {
+            get { return ageValue; }
+
+            set
+            {
+                if (value != ageValue)
+                {
+                    ageValue = value;
+                }
+            }
         }
     }
 }
