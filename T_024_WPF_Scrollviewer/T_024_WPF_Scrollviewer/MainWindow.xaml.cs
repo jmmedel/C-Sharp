@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace T_023_WPF_Radiobutton
+namespace T_024_WPF_Scrollviewer
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,18 +23,6 @@ namespace T_023_WPF_Radiobutton
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void HandleCheck1(object sender, RoutedEventArgs e)
-        {
-            RadioButton rb = sender as RadioButton;
-            textBlock3.Text = "You are " + rb.Content;
-        }
-
-        private void HandleCheck(object sender, RoutedEventArgs e)
-        {
-            RadioButton rb = sender as RadioButton;
-            textBlock2.Text = "You are " + rb.Content;
         }
     }
 }

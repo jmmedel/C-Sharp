@@ -27,8 +27,43 @@ Let’s create a new WPF project with the name WPFDialog.
 Drag five radio buttons and four text blocks from the Toolbox and arrange them as shown in the following XAML code.
 
 The following example shows how to use a RadioButton. We will display two groups of RadioButton. When a user selects an option, then the program will display the message on a TextBlock. Here is the XAML code.
+    
     -->
     <Grid>
-        
+        <TextBlock x:Name = "textBlock" HorizontalAlignment = "Left"  
+         Margin = "23,68,0,0" TextWrapping = "Wrap" Text = "Gender:"
+         VerticalAlignment = "Top" Width = "83" />
+
+        <TextBlock x:Name = "textBlock1" HorizontalAlignment = "Left" 
+         Margin = "23,134,0,0" TextWrapping = "Wrap" Text = "Marital Status:"
+         VerticalAlignment = "Top" Width = "83" />
+
+        <RadioButton x:Name = "rb1" Content = "Male" HorizontalAlignment = "Left"  
+         Margin = "126,68,0,0" VerticalAlignment = "Top"  
+         GroupName = "Gender" Width = "69" Checked = "HandleCheck" />
+
+        <RadioButton x:Name = "rb2" Content = "Female" HorizontalAlignment = "Left"  
+         Margin = "201,68,0,0" VerticalAlignment = "Top"  
+         GroupName = "Gender" Width = "81" Checked = "HandleCheck" />
+
+        <RadioButton x:Name = "rb3" Content = "Single" HorizontalAlignment = "Left"
+         Margin = "126,134,0,0" VerticalAlignment = "Top"  
+         GroupName = "Status" Width = "69" Checked = "HandleCheck1" />
+
+        <RadioButton x:Name = "radioButton" Content = "Engaged" HorizontalAlignment = "Left"  
+         Margin = "201,134,0,0" VerticalAlignment = "Top"  
+         GroupName = "Status" Width = "89" Checked = "HandleCheck1" />
+
+        <RadioButton x:Name = "radioButton1" Content = "Married"  
+         GroupName = "Status" HorizontalAlignment = "Left" Margin = "302,134,0,0"
+         VerticalAlignment = "Top" Width = "95" Checked = "HandleCheck1" />
+
+        <TextBlock x:Name = "textBlock2" HorizontalAlignment = "Left"  
+         Margin = "386,68,0,0" TextWrapping = "Wrap"  
+         VerticalAlignment = "Top" Width = "191" Height = "26" />
+
+        <TextBlock x:Name = "textBlock3" HorizontalAlignment = "Left"  
+         Margin = "386,134,0,0" TextWrapping = "Wrap" 
+         VerticalAlignment = "Top" Width = "146" Height = "31" />
     </Grid>
 </Window>
