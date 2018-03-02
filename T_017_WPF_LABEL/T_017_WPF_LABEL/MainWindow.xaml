@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:T_017_WPF_LABEL"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="600">
+    <!-- 
+    WPF - Label
+    The Label class provides both functional and visual support for access keys (also known as mnemonics). It is frequently used to enable quick keyboard access to controls. The hierarchical inheritance of Label class is as follows −
+    Below are the commonly used properties of Label class
+
+Given below are the most commonly used properties of Label.
+Commonly Used Events of Label Class
+Given below are the most commonly used events of Label.
+Commonly Used Methods in Label Class
+Given below are the most commonly used methods of Label.
+Example
+Let’s create a new WPF project with the name WPFLabelControl.
+
+Drag one label control from the Toolbox.
+
+Change the different properties of label from the properties window, as shown in the following XAML code.
+    -->
     <Grid>
-        
+        <Label x:Name="label" Content="Label Example in wpf" HorizontalAlignment="Left" Margin="71,82,0,0"
+               VerticalAlignment="Top" Height="135" Width="474" Background="Brown"  FontSize="36"
+               FontFamily="italic" FontWeight="Light" Foreground="Aqua"/>
     </Grid>
 </Window>

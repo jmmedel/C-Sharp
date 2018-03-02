@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T_018_WPF_LISTBOX", "T_018_WPF_LISTBOX\T_018_WPF_LISTBOX.csproj", "{619D6E72-6758-4900-B876-1C203D882375}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{619D6E72-6758-4900-B876-1C203D882375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{619D6E72-6758-4900-B876-1C203D882375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{619D6E72-6758-4900-B876-1C203D882375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{619D6E72-6758-4900-B876-1C203D882375}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {634A6A04-5C52-45A3-A589-C0321A77CF18}
+	EndGlobalSection
+EndGlobal
