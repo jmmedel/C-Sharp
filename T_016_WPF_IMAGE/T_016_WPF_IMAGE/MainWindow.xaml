@@ -1,0 +1,59 @@
+﻿<Window x:Class="T_016_WPF_IMAGE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T_016_WPF_IMAGE"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <!-- WPF - Image
+    A control that displays an image, you can use either the Image object or the ImageBrush object. An Image object display an image, while an ImageBrush object paints another object with an image. The image source is specified by referring to an image file using several supported formats. It can display the following formats −
+
+Bitmap (BMP)
+Tagged Image File Format (TIFF)
+Icons (ICO)
+Joint Photographic Experts Group (JPEG)
+Graphics Interchange Format (GIF)
+Portable Network Graphics (PNG)
+JPEG XR
+The hierarchical inheritance of Image class is as follows
+
+Hierarchical of Image
+Commonly Used Properties of Image class
+Given below are the most commonly used properties of Image.
+Commonly Used Events of Image Class
+Given below are the most commonly used events of Image.
+Example
+Let’s create a new WPF project with the name WPFImageControl.
+
+First divide the screen into two rows by using Grid.RowDefinition.
+
+Drag three Image controls from the Toolbox.
+
+The following example shows three images. The first one is a simple image; in the second image, opacity property is set; and in the third image, one Eclipse is painted with an ImageBrush.
+
+The XAML code is as follows −
+    
+    -->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height = "1*"/>
+            <RowDefinition Height = "1*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation = "Horizontal">
+            <Image Width = "200" Source = "C:\Users\kagaya\Desktop\Git\T_016_WPF_IMAGE\T_016_WPF_IMAGE\Image\download.jpg"  
+            VerticalAlignment = "Top" Margin = "30"/>
+            <Image Width = "200" Source = "C:\Users\kagaya\Desktop\Git\T_016_WPF_IMAGE\T_016_WPF_IMAGE\Image\download.jpg" VerticalAlignment = "Top"
+            Margin = "30" Opacity = "0.5"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row = "1">
+            <Ellipse Height = "100" Width = "200" HorizontalAlignment = "Center" Margin = "30">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource = "C:\Users\kagaya\Desktop\Git\T_016_WPF_IMAGE\T_016_WPF_IMAGE\Image\download.jpg" />
+                </Ellipse.Fill>
+            </Ellipse>
+        </StackPanel>
+    </Grid>
+</Window>

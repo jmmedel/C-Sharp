@@ -6,7 +6,42 @@
         xmlns:local="clr-namespace:T_015_GridView"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <!-- WPF - Gridview
+    A GridView is a control that displays data items in rows and columns. Actually a ListView displays data. By default, it contains a GridView. The hierarchical inheritance of GridView class is as follows −
+
+Hierarchical of Gridview
+Given below are the most commonly used properties of GridView.
+Given below are the most commonly used events of GridView.
+Given below are the most commonly used methods of GridView.
+Example
+Let’s take an example to understand the concept better. Start by creating a new WPF project with the name WPFGridView.
+
+Drag a grid view control from the Toolbox.
+
+The following example shows the data in grid like table.
+
+The following XAML code creates and implements a GridView.
+    
+    
+    -->
     <Grid>
-        
+        <ListView HorizontalAlignment = "Left" Height = "299" Margin = "10,10,0,0" 
+         VerticalAlignment = "Top" Width = "497" Name = "MenList">
+
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header = "Name" DisplayMemberBinding = "{Binding Name}" 
+                  Width = "100"/>
+
+                    <GridViewColumn Header = "ID" DisplayMemberBinding = "{Binding ID}" 
+                  Width = "100"/>
+
+                    <GridViewColumn Header = "Age" DisplayMemberBinding = "{Binding Age}" 
+                  Width = "100"/>
+
+                </GridView>
+            </ListView.View>
+
+        </ListView>
     </Grid>
 </Window>

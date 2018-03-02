@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace T_015_GridView
+namespace T_016_WPF_IMAGE
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,16 +23,6 @@ namespace T_015_GridView
         public MainWindow()
         {
             InitializeComponent();
-            MenList.Items.Add(new Person() { Name = "Ali", ID = "123A", Age = 20 });
-            MenList.Items.Add(new Person() { Name = "Akram", ID = "456X", Age = 35 });
-            MenList.Items.Add(new Person() { Name = "Salman", ID = "333E", Age = 49 });
-
-        }
-        class Person
-        {
-            public string Name { get; set; }
-            public string ID { get; set; }
-            public int Age { get; set; }
         }
     }
 }
