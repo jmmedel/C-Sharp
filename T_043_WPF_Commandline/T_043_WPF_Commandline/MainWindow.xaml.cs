@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace T_040_WPF_Keyboard
+namespace T_043_WPF_Commandline
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -24,25 +24,5 @@ namespace T_040_WPF_Keyboard
         {
             InitializeComponent();
         }
-
-        private void OnTextInputButtonClick(object sender, RoutedEventArgs e)
-        {
-            handle();
-            e.Handled = true;
-        }
-
-        private void OnTextInputKeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Key == Key.O && Keyboard.Modifiers == ModifierKeys.Control)
-            {
-                handle();
-                e.Handled = true;
-            }
-        }
-        public void handle()
-        {
-            MessageBox.Show("Do you want to open a file?");
-        }
-
     }
 }

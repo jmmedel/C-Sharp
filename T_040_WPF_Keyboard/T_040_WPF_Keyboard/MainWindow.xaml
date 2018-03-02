@@ -16,6 +16,10 @@ Drag a textbox and a button to a stack panel and set the following properties an
     
     -->
     <Grid>
-        
+        <StackPanel Orientation = "Horizontal" KeyDown = "OnTextInputKeyDown">
+            <TextBox Width = "400" Height = "30" Margin = "10"/>
+            <Button Click = "OnTextInputButtonClick"
+            Content = "Open" Margin = "10" Width = "50" Height = "30"/>
+        </StackPanel>
     </Grid>
 </Window>
