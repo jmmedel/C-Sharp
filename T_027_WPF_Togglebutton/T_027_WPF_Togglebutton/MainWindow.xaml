@@ -6,10 +6,28 @@
         xmlns:local="clr-namespace:T_027_WPF_Togglebutton"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <!-- 
+    <!-- WPF - Togglebutton
+    A Toggle Button is a control that can switch states, such as CheckBox and RadioButton. The hierarchical inheritance of ToggleButton class is as follows −
+
+Hierarchical of Togglebutton
+Commonly Used Properties in ToggleButton Class
+Given below are the most commonly used properties of ToggleButton.
+Commonly Used Events in ToggleButton Class
+Given below are the most commonly used events of ToggleButton.
+Example
+Let’s create a new WPF project with WPFToggleButtonControl.
+Drag a text block and a toggle button from the toolbox.
+Change the background color of the text block from the properties window.
+The following example shows the usage of ToggleButton in an XAML application.
+The following XAML code creates a ToggleButton and initializes it with some properties.
     
     -->
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <ToggleButton x:Name = "tb" Content = "Toggle"  
+         Checked = "HandleCheck" Unchecked = "HandleUnchecked" Margin = "20"
+         Width = "108" HorizontalAlignment = "Center" />
+        <TextBlock x:Name = "text2" Margin = "20" Width = "300" 
+         HorizontalAlignment = "Center" FontSize = "24" Background = "#FFFDE0E0" />
+    </StackPanel>
+
 </Window>

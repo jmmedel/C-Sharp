@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace T_027_WPF_Togglebutton
+namespace T_028_WPF_Tooltip
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,15 +23,6 @@ namespace T_027_WPF_Togglebutton
         public MainWindow()
         {
             InitializeComponent();
-        }
-        private void HandleCheck(object sender, RoutedEventArgs e)
-        {
-            text2.Text = "Button is Checked";
-        }
-
-        private void HandleUnchecked(object sender, RoutedEventArgs e)
-        {
-            text2.Text = "Button is unchecked.";
         }
     }
 }
