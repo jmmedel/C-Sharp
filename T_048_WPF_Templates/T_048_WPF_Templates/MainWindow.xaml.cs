@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace T_047_WPF_Resource_Scope
+namespace T_048_WPF_Templates
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,11 +23,6 @@ namespace T_047_WPF_Resource_Scope
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void changeResourceButton_Click(object sender, RoutedEventArgs e)
-        {
-            
         }
     }
 }

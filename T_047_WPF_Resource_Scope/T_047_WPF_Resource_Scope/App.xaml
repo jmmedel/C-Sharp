@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:T_047_WPF_Resource_Scope"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source = " C:\Users\kagaya\Desktop\Git\T_047_WPF_Resource_Scope\T_047_WPF_Resource_Scope\ResourceDictionaries\DictionaryWithBrush.xaml"/>
     </Application.Resources>
 </Application>

@@ -6,7 +6,42 @@
         xmlns:local="clr-namespace:T_047_WPF_Resource_Scope"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <!-- 
+    Resource Scope
+Resources are defined in resource dictionaries, but there are numerous places where a resource dictionary can be defined. In the above example, a resource dictionary is defined on Window/page level. In what dictionary a resource is defined immediately limits the scope of that resource. So the scope, i.e. where you can use the resource, depends on where you've defined it.
+
+Define the resource in the resource dictionary of a grid and it's accessible by that grid and by its child elements only.
+
+Define it on a window/page and it's accessible by all elements on that window/page.
+
+The app root can be found in App.xaml resources dictionary. It's the root of our application, so the resources defined here are scoped to the entire application.
+
+As far as the scope of the resource is concerned, the most often are application level, page level, and a specific element level like a Grid, StackPanel, etc.
+    The above application has resources in its Window/page level.
+
+Resource Dictionaries
+Resource dictionaries in XAML apps imply that the resource dictionaries are kept in separate files. It is followed in almost all XAML apps. Defining resources in separate files can have the following advantages −
+
+Separation between defining resources in the resource dictionary and UI related code.
+
+Defining all the resources in a separate file such as App.xaml would make them available across the app.
+
+So, how do we define our resources in a resource dictionary in a separate file? Well, it is very easy, just add a new resource dictionary through Visual Studio by following steps given below −
+
+In your solution, add a new folder and name it ResourceDictionaries.
+
+Right-click on this folder and select Resource Dictionary from Add submenu item and name it DictionaryWithBrush.xaml
+
+Example
+Let’s now take the same example, but here, we will define the resource dictionary in app level. The XAML code for MainWindow.xaml is as follows 
+    -->
     <Grid>
-        
+        <StackPanel>
+            <Rectangle Height = "50" Margin = "20" Fill = "{StaticResource brushResource}" />
+            <Rectangle Height = "50" Margin = "20" Fill = "{DynamicResource brushResource}" />
+            <Button x:Name = "changeResourceButton"
+         Content = "_Change Resource" Click = "changeResourceButton_Click" />
+
+        </StackPanel>
     </Grid>
 </Window>
