@@ -5,11 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:T_020_WPF_Passwordbox"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="604">
     <!-- 
-    
+    WPF - Passwordbox
+    PasswordBox is a control that allows the user to enter masked passwords. When the user enters a password, it will be displayed as password characters. You can change the Password character by setting the PasswordChar property. The hierarchical inheritance of PasswordBox class is as follows −
+    Commonly Used Properties of PasswordBox Class
+Given below are the most commonly used properties of PasswordBox.
+Commonly Used Events of PasswordBox Class
+Given below are the most commonly used events of PasswordBox.
+Below are the commonly used Methods of PasswordBox class.
+
+Given below are the most commonly used methods of PasswordBox.
+The following example shows the PasswordBox, labels, and button. Here is the XAML code in which all these controls are created and initialized.
     -->
     <Grid>
-        
+        <PasswordBox x:Name = "pwBox" Height = "35" Width = "200" 
+         MaxLength = "8" Margin = "159,55,158,229" />
+        <Label Content = "Password" HorizontalAlignment = "Left" Margin = "100,61,0,0"  
+         VerticalAlignment = "Top" Width = "70" />
+        <Button Content = "Ok" HorizontalAlignment = "Left" Margin = "406,64,0,0" 
+         VerticalAlignment = "Top" Width = "75" Click = "Button_Click"/>
+        <Label x:Name = "statusText" HorizontalAlignment = "Left" Margin = "159,128,0,0"  
+         VerticalAlignment = "Top" Width = "200" Height = "38"/>
     </Grid>
 </Window>

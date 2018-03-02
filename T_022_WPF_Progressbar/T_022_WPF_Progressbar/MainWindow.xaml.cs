@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace T_020_WPF_Passwordbox
+namespace T_022_WPF_Progressbar
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,16 +23,6 @@ namespace T_020_WPF_Passwordbox
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            if (pwBox.Password.ToString() == "wpf12345")
-                statusText.Content = "Password Accepted";
-            else
-                statusText.Content = "Wrong Password";
-
-
         }
     }
 }

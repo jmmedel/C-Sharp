@@ -1,0 +1,39 @@
+﻿<Window x:Class="T_021_WPF_Pop_Up.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T_021_WPF_Pop_Up"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <!-- WPF - Popup
+    Popup is a control that displays content on top of existing content, within the bounds of the application window. It is a temporary display on other content. The hierarchical inheritance of Popup class is as follows −
+    Commonly Used Properties of Popup Class
+Given below are the most commonly used properties of Popup.
+Commonly Used Events of Popup Class
+Given below are the most commonly used events of Popup.
+Example
+Let’s create a new WPF project with the name WPFPopupControl.
+
+When you look at the Toolbox, you will observe that there is no popup control. But you can add a popup control to you app from XAML.
+
+The following example shows how to use Popup control. Here is the XAML code in which a Popup control and a CheckBox is created and initialized. When the user checks the CheckBox, it displays a Popup.
+    
+    -->
+    <Grid>
+        <CheckBox Name = "PCheckBox" Margin = "198,94,208,194" Content = "Checked Me" />
+        <Popup IsOpen = "{Binding ElementName = PCheckBox,Path = IsChecked}"    
+         PlacementTarget = "{Binding ElementName = PCheckBox}"
+         AllowsTransparency = "True" PopupAnimation = "Slide">
+
+            <Canvas Width = "125" Height = "100" Background = "LightGray">
+                <Canvas.RenderTransform>
+                    <RotateTransform x:Name = "theTransform" />
+                </Canvas.RenderTransform>
+                <TextBlock TextWrapping = "Wrap" Foreground = "Blue"
+               Text = "Hi, this is Popup" />
+            </Canvas>
+
+        </Popup>
+    </Grid>
+</Window>
