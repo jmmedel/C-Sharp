@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace T_062_WPF_Localization
+namespace T_063_WPF_Interaction
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -24,6 +24,5 @@ namespace T_062_WPF_Localization
         {
             InitializeComponent();
         }
-
     }
 }

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T_063_WPF_Interaction", "T_063_WPF_Interaction\T_063_WPF_Interaction.csproj", "{EFFB5B12-29C0-4559-BDC8-F65108469398}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFFB5B12-29C0-4559-BDC8-F65108469398}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFFB5B12-29C0-4559-BDC8-F65108469398}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFFB5B12-29C0-4559-BDC8-F65108469398}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFFB5B12-29C0-4559-BDC8-F65108469398}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E179A7B0-80C3-4AEB-84CB-18EC0F5D813E}
+	EndGlobalSection
+EndGlobal
