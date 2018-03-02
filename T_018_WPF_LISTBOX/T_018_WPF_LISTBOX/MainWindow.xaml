@@ -6,7 +6,39 @@
         xmlns:local="clr-namespace:T_018_WPF_LISTBOX"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <!-- 
+    WPF - Listbox
+    ListBox is a control that provides a list of items to the user item selection. A user can select one or more items from the predefined list of items at a time. In a ListBox, multiple options are always visible to the user without any user interaction. The hierarchical inheritance of ListBox class is as follows −
+
+Hierarchical of Listbox
+Below are the commonly used Properties of ListBox class
+
+Given below are the most commonly used properties of ListBox.
+Commonly Used Events of ListBox
+Given below are the most commonly used events of ListBox.
+Commonly Used Methods of ListBox
+Given below are the most commonly used methods of ListBox.
+Example
+Let’s create a new WPF project with the name WPFListBoxControl.
+
+Drag one list box and one textbox from the Toolbox.
+
+When the user selects any item from the ListBox, it displayed on the TextBox as well.
+
+Here is the XAML code in which a ListBox and a TextBox is created and initialized with some properties.
+    
+    -->
     <Grid>
-        
+        <ListBox Name = "listbox" Margin = "118,77,293,103">
+            <ListBoxItem Content = "XAML Tutorials" />
+            <ListBoxItem Content = "WPF Tutorials" />
+            <ListBoxItem Content = "Silverlight Tutorials" />
+            <ListBoxItem Content = "Windows 10 Tutorials" />
+            <ListBoxItem Content = "iOS Tutorials" />
+        </ListBox>
+
+        <TextBox Height = "23" x:Name = "textBox1" Width = "120" Margin = "361,116,0,0"  
+         HorizontalAlignment = "Left" VerticalAlignment = "Top"  
+         Text="{Binding SelectedItem.Content, ElementName=listbox}" />
     </Grid>
 </Window>

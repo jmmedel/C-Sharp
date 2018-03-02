@@ -1,0 +1,63 @@
+﻿<Window x:Class="T_019_WPF_Menu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T_019_WPF_Menu"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <!-- 
+    WPF - Menu
+    Menu is a control that enables you to hierarchically organize elements associated with the commands and event handlers. Menu is an ItemsControl, so it can contain a collection of any object type such as string, image, or panel. The hierarchical inheritance of Menu class is as follows −
+    Below are the commonly used properties on Menu class
+
+Given below are the most commonly used properties of Menu.
+Commonly Used Events in Menu Class
+Given below are the most commonly used events of Menu.
+Example
+Let’s create a new WPF project with the name WPFMenuControl.
+
+Drag a menu control from the Toolbox to the design window.
+
+The following example contains three menu options with some menu items. When the user clicks an item, the program updates the title. Here is the XAML code −
+    
+    -->
+    <Grid>
+        <Menu HorizontalAlignment = "Left" VerticalAlignment = "Top" Width = "517">
+
+            <MenuItem Header = "File">
+                <MenuItem Header = "Item 1" HorizontalAlignment = "Left" Width = "140" 
+               Click = "MenuItem_Click" />
+
+                <MenuItem Header = "Item 2" HorizontalAlignment = "Left" Width = "140" 
+               Click = "MenuItem_Click" />
+
+                <Separator HorizontalAlignment = "Left" Width = "140" />
+
+                <MenuItem Header = "Item 3" HorizontalAlignment = "Left" Width = "140" 
+               Click = "MenuItem_Click"/>
+            </MenuItem>
+
+            <MenuItem Header = "Edit">
+                <MenuItem Header = "Item 1" HorizontalAlignment = "Left" Width = "140" 
+               Click = "MenuItem_Click1" />
+                <MenuItem Header = "Item 2" HorizontalAlignment = "Left" Width = "140" 
+               Click = "MenuItem_Click1" />
+                <Separator HorizontalAlignment = "Left" Width = "140" />
+                <MenuItem Header = "Item 3" HorizontalAlignment = "Left" Width = "140" 
+               Click = "MenuItem_Click1" />
+            </MenuItem>
+
+            <MenuItem Header = "View">
+                <MenuItem Header = "Item 1" HorizontalAlignment = "Left" Width = "140" 
+               Click = "MenuItem_Click2" />
+                <MenuItem Header = "Item 2" HorizontalAlignment = "Left" Width = "140" 
+               Click = "MenuItem_Click2" />
+                <Separator HorizontalAlignment = "Left" Width = "140" />
+                <MenuItem Header = "Item 3" HorizontalAlignment = "Left" Width = "140" 
+               Click = "MenuItem_Click2"/>
+            </MenuItem>
+
+        </Menu>
+    </Grid>
+</Window>
