@@ -1,0 +1,34 @@
+﻿<Window x:Class="T_023_WPF_Radiobutton.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T_023_WPF_Radiobutton"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <!-- 
+    WPF - Radiobutton
+    A Radio Button is a control that allows a user to select a single option from a group of options. The user is limited to select a single option from a related list of options which are mutually exclusive. It has only two options −
+
+Selected
+Cleared
+The hierarchical inheritance of RadioButton class is as follows −
+
+Hierarchical of Radiobutton
+Commonly Used Properties of RadioButton
+Given below are the most commonly used properties of RadioButton.
+Commonly Used Methods of RadioButton
+Given below are the most commonly used methods of RadioButton.
+Commonly Used Events of RadioButton
+Given below are the most commonly used events of RadioButton.
+Example
+Let’s create a new WPF project with the name WPFDialog.
+
+Drag five radio buttons and four text blocks from the Toolbox and arrange them as shown in the following XAML code.
+
+The following example shows how to use a RadioButton. We will display two groups of RadioButton. When a user selects an option, then the program will display the message on a TextBlock. Here is the XAML code.
+    -->
+    <Grid>
+        
+    </Grid>
+</Window>

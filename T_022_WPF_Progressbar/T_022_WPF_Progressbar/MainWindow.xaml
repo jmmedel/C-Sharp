@@ -5,11 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:T_022_WPF_Progressbar"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <!-- 
-    
+        Title="MainWindow" Height="350" Width="525" WindowStartupLocation="CenterScreen">
+    <!-- WPF - Progressbar
+    ProgressBar is a control that indicates the progress of an operation, where the typical visual appearance is a bar that animates a filled area as the progress continues. It can show the progress in one of the two following styles −
+
+A bar that displays a repeating pattern, or
+A bar that fills based on a value.
+The hierarchical inheritance of ProgressBar class is as follows −
+    Commonly Used Properties of ProgressBar
+Given below are the most commonly used properties of ProgressBar.
+Commonly Used Events in ProgressBar Class
+Given below are the most commonly used events of ProgressBar.
+Commonly Used Methods in ProgressBar Class
+Given below are the most commonly used methods of ProgressBar.
+Example
+Let’s create a new WPF project with the name WPFProgressBarControl.
+
+The following example shows how to use the ProgressBar control. Here is the XAML code in which two ProgressBar controls are created and initialized.
     -->
     <Grid>
-        
+        <StackPanel x:Name="LayoutRoot" Margin="20">
+            <Border BorderThickness="5" BorderBrush="Green">
+                <StackPanel Background="White">
+                    <TextBlock HorizontalAlignment="Center" Margin="10"
+                               Text="Value Based Progress bar" />
+                    <ProgressBar x:Name="pg1" Value="100" Margin="10" Maximum="200"
+                                 Height="15" IsIndeterminate="False" />
+                </StackPanel>
+            </Border>
+
+            <Border BorderThickness="5" BorderBrush="Green">
+                <StackPanel Background="White">
+                    <TextBlock HorizontalAlignment="Center" Margin="10"
+                               Text="Value Based Progress bar" />
+                    <ProgressBar x:Name="pg2" Value="100" Margin="10" Maximum="200"
+                                 Height="15" IsIndeterminate="True" />
+                </StackPanel>
+            </Border>
+            
+        </StackPanel>
     </Grid>
 </Window>
