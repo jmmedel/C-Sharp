@@ -1,0 +1,47 @@
+﻿<Window x:Class="T_051_WPF_Style_Using_Resources.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T_051_WPF_Style_Using_Resources"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+
+    <Window.Resources>
+        <Style x:Key = "myButtonStyle" TargetType = "Button">
+            <Setter Property = "Height" Value = "30" />
+            <Setter Property = "Width" Value = "80" />
+            <Setter Property = "Foreground" Value = "Blue" />
+            <Setter Property = "FontSize" Value = "12" />
+            <Setter Property = "Margin" Value = "10" />
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+        <Button Content = "Button1" Style = "{StaticResource myButtonStyle}" />
+        <Button Content = "Button2" Style = "{StaticResource myButtonStyle}" />
+        <Button Content = "Button3" Style="{StaticResource myButtonStyle}" />
+    </StackPanel>
+    <!-- 
+    Styles are defined in the resource dictionary and each style has a unique key identifier and a target type. Inside <style> you can see that multiple setter tags are defined for each property which will be included in the style.
+
+In the above example, all of the common properties of each button are now defined in style and then the style are assigned to each button with a unique key by setting the style property through the StaticResource markup extension.
+
+When you compile and execute the above code, it will display the following window (the same output).
+    The advantage of doing it like this is immediately obvious, we can reuse that style anywhere in its scope; and if we need to change it, we simply change it once in the style definition instead of on each element.
+
+In what level a style is defined instantaneously limits the scope of that style. So the scope, i.e. where you can use the style, depends on where you've defined it. Styles can be defined on the following levels −
+
+Sr.No	Levels & Description
+1	Control Level
+Defining a style on control level can only be applied to that particular control. Given below is an example of a control level where the button and TextBlock have their own style.
+
+2	Layout Level
+Defining a style on any layout level will make it accessible by that layout and its child elements only.
+
+3	Window Level
+Defining a style on a window level can make it accessible by all the elements on that window.
+
+4	Application Level
+Defining a style on app level can make it accessible throughout the entire application. Let’s take the same example, but here, we will put the styles in app.xaml file to make it accessible throughout application.
+    -->
+</Window>

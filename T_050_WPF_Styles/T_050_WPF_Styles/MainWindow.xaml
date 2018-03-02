@@ -6,7 +6,33 @@
         xmlns:local="clr-namespace:T_050_WPF_Styles"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+    <!-- 
+    WPF - Styles
+    The .NET framework provides several strategies to personalize and customize the appearance of an application. Styles provide us the flexibility to set some properties of an object and reuse these specific settings across multiple objects for a consistent look.
+
+In styles, you can set only the existing properties of an object such as Height, Width, Font size, etc.
+
+Only default behavior of a control can be specified.
+
+Multiple properties can be added into a single style.
+
+Styles are used to give a uniform look or appearance to a set of controls. Implicit styles are used to apply an appearance to all the controls of a given type and simplify the application. Imagine three buttons, all of them have to look the same, same width and height, same font size, same foreground color, etc. We can set all those properties on the button elements themselves and that's still quite okay for all of the buttons. Take a look at the following diagram.
+    But in a real-life applications, you'll typically have a lot more of these that need to look exactly the same. And not only buttons of course, you'll typically want your text blocks, text boxes, and combo boxes etc. to look the same across your application. Surely, there must be a better way to achieve this and it is known as styling. You can think of a style as a convenient way to apply a set of property values to more than one element. Take a look at the following diagram.
+    Example
+Let’s take a simple example to understand this concept. Start by creating a new WPF project.
+
+Drag three buttons from the toolbox to the design window.
+
+The following XAML code creates three buttons and initializes them with some properties.
+    -->
+
+    <StackPanel>
+        <Button Content = "Button1" Height = "30" Width = "80" 
+         Foreground = "Blue" FontSize = "12" Margin = "10"/>
+        <Button Content = "Button2" Height = "30" Width = "80" 
+         Foreground = "Blue" FontSize = "12" Margin = "10"/>
+        <Button Content = "Button3" Height = "30" Width = "80" 
+         Foreground = "Blue" FontSize = "12" Margin = "10"/>
+    </StackPanel>
+
 </Window>

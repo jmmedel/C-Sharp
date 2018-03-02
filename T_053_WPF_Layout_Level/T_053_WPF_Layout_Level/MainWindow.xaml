@@ -1,0 +1,31 @@
+﻿<Window x:Class="T_053_WPF_Layout_Level.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T_053_WPF_Layout_Level"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <!-- 
+    WPF - Layout Level
+    Defining a style on any layout level will make it accessible by that layout and its child elements only. Given below is an example of layout level where all the three buttons have common style.
+    
+    -->
+    <StackPanel Margin = "10">
+        <StackPanel.Resources>
+            <Style TargetType = "Button">
+                <Setter Property = "Foreground" Value = "Blue" />
+                <Setter Property = "FontStyle" Value = "Italic" />
+                <Setter Property = "Width" Value = "100" />
+                <Setter Property = "Height" Value = "40" />
+                <Setter Property = "Margin" Value = "10" />
+            </Style>
+        </StackPanel.Resources>
+
+        <Button>Button 1</Button>
+        <Button>Button 2</Button>
+        <Button Foreground = "Blue">Button 3</Button>
+    </StackPanel>
+
+
+</Window>
