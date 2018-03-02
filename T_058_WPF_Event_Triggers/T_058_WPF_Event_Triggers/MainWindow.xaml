@@ -7,9 +7,43 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <!-- 
+    Event Triggers
+An event trigger performs some actions when a specific event is fired. It is usually used to accomplish some animation on control such DoubleAnumatio, ColorAnimation, etc. In the following example, we will create a simple button. When the click event is fired, it will expand the button width and height.
     
     -->
+
     <Grid>
-        
+        <Button Content = "Click Me" Width = "60" Height = "30">
+
+            <Button.Triggers>
+                <EventTrigger RoutedEvent = "Button.Click">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty = 
+                           "Width" Duration = "0:0:4">
+                                    <LinearDoubleKeyFrame Value = "60" KeyTime = "0:0:0"/>
+                                    <LinearDoubleKeyFrame Value = "120" KeyTime = "0:0:1"/>
+                                    <LinearDoubleKeyFrame Value = "200" KeyTime = "0:0:2"/>
+                                    <LinearDoubleKeyFrame Value = "300" KeyTime = "0:0:3"/>
+                                </DoubleAnimationUsingKeyFrames>
+
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty = "Height" 
+                           Duration = "0:0:4">
+                                    <LinearDoubleKeyFrame Value = "30" KeyTime = "0:0:0"/>
+                                    <LinearDoubleKeyFrame Value = "40" KeyTime = "0:0:1"/>
+                                    <LinearDoubleKeyFrame Value = "80" KeyTime = "0:0:2"/>
+                                    <LinearDoubleKeyFrame Value = "150" KeyTime = "0:0:3"/>
+                                </DoubleAnimationUsingKeyFrames>
+
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </Button.Triggers>
+
+        </Button>
     </Grid>
+
 </Window>
