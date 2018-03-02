@@ -6,10 +6,49 @@
         xmlns:local="clr-namespace:T_036_WPF_Grid_Panel"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <!-- 
-    
+    <!-- WPF - GridPanel
+    A Grid Panel provides a flexible area which consists of rows and columns. In a Grid, child elements can be arranged in tabular form. Elements can be added to any specific row and column by using Grid.Row and Grid.Column properties
+
+By default, a Grid panel is created with one row and one column. Multiple rows and columns are created by RowDefinitions and ColumnDefinitions properties. The height of rows and the width of columns can be defined in the following three ways −
+
+Fixed value − To assign a fixed size of logical units (1/96 inch)
+
+Auto − It will take space which are required for the controls in that specific row/column.
+
+Star (*) − It will take the remaining space when Auto and fixed sized are filled.
+
+The hierarchical inheritance of Canvas class is as follows.
+    Commonly Used Properties of Grid Class
+Given below are the most commonly used properties of Grid.
+Commonly Used Methods of Grid Class
+Given below are the most commonly used methods of Grid.
+Example
+The following example shows how to add child elements into 
+    a Grid to specify it in a tabular form. In the following
+    XAML implementation, Text Blocks are added in the first 
+    column and Text Boxes are added in the second column of the
+    Grid.
     -->
-    <Grid>
-        
+    <Grid x:Name = "FormLayoutGrid" Background = "AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width = "Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height = "*" />
+            <RowDefinition Height = "*" />
+            <RowDefinition Height = "*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row = "0" Grid.Column = "0" Text = "Name" Margin = "10"  
+         HorizontalAlignment = "Left" VerticalAlignment = "Center" Width = "100" />
+        <TextBox Grid.Row = "0" Grid.Column = "1" Margin = "10" />
+        <TextBlock Grid.Row = "1" Grid.Column = "0" Text = "ID" Margin = "10"  
+         HorizontalAlignment = "Left" VerticalAlignment = "Center" Width = "100" />
+        <TextBox Grid.Row = "1" Grid.Column = "1" Margin = "10" />
+        <TextBlock Grid.Row = "2" Grid.Column = "0" Text = "Age" Margin = "10"  
+         HorizontalAlignment = "Left" VerticalAlignment = "Center" Width = "100" />
+        <TextBox Grid.Row = "2" Grid.Column = "1" Margin = "10" />
     </Grid>
 </Window>
