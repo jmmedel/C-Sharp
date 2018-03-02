@@ -6,7 +6,31 @@
         xmlns:local="clr-namespace:T_057_WPF_Triggers_Data"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+    <!-- 
+    Data Triggers
+A data trigger performs some actions when the bound data satisfies some conditions. Let’s have a look at the following XAML code in which a checkbox and a text block are created with some properties. When the checkbox is checked, it will change its foreground color to red.
+    
+    -->
+
+    <StackPanel HorizontalAlignment = "Center">
+        <CheckBox x:Name = "redColorCheckBox" 
+         Content = "Set red as foreground color" Margin = "20"/>
+
+        <TextBlock Name = "txtblock" VerticalAlignment = "Center" 
+         Text = "Event Trigger" FontSize = "24" Margin = "20">
+            <TextBlock.Style>
+                <Style>
+                    <Style.Triggers>
+                        <DataTrigger Binding = "{Binding ElementName = redColorCheckBox, Path = IsChecked}" 
+                     Value = "true">
+                            <Setter Property = "TextBlock.Foreground" Value = "Red"/>
+                            <Setter Property = "TextBlock.Cursor" Value = "Hand" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+
+    </StackPanel>
+
 </Window>
