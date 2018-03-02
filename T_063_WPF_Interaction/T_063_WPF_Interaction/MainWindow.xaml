@@ -6,7 +6,22 @@
         xmlns:local="clr-namespace:T_063_WPF_Interaction"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+    <!-- 
+    WPF - Interaction
+In WPF, an interaction shows how a view interacts with controls located in that view. The most commonly known interactions are of two types −
+
+Behaviors
+Drag and Drop
+Behaviors
+Behaviors were introduced with Expression Blend 3 which can encapsulate some of the functionality into a reusable component. To add additional behaviors, you can attach these components to the controls. Behaviors provide more flexibility to design complex user interactions easily.
+
+Let’s take a look at a simple example in which a ControlStoryBoardAction behavior is attached to controls.
+
+Create a new WPF project with the name WPFBehavior.
+
+The following XAML code creates an ellipse and two buttons to control the movement of the ellipse.
+    
+    -->
+
+   
 </Window>
