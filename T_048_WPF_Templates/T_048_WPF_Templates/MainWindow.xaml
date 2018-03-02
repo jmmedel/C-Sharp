@@ -6,7 +6,75 @@
         xmlns:local="clr-namespace:T_048_WPF_Templates"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+    <!-- 
+    WPF - Templates
+    A template describes the overall look and visual appearance of a control. For each control, there is a default template associated with it which gives the control its appearance. In WPF applications, you can easily create your own templates when you want to customize the visual behavior and visual appearance of a control.
+
+Connectivity between the logic and the template can be achieved by data binding. The main difference between styles and templates are listed below −
+
+Styles can only change the appearance of your control with default properties of that control.
+
+With templates, you can access more parts of a control than in styles. You can also specify both existing and new behavior of a control.
+
+There are two types of templates which are most commonly used −
+
+Control Template
+Data Template
+    Example
+Let’s take a simple example. We will create two buttons (one is with template and the other one is the default button) and initialize them with some properties.
+    
+    -->
+    <Window.Resources>
+        <ControlTemplate x:Key = "ButtonTemplate" TargetType = "Button">
+
+            <Grid>
+                <Ellipse x:Name = "ButtonEllipse" Height = "100" Width = "150" >
+                    <Ellipse.Fill>
+                        <LinearGradientBrush StartPoint = "0,0.2" EndPoint = "0.2,1.4">
+                            <GradientStop Offset = "0" Color = "Red" />
+                            <GradientStop Offset = "1" Color = "Orange" />
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+
+                <ContentPresenter Content = "{TemplateBinding Content}" 
+               HorizontalAlignment = "Center" VerticalAlignment = "Center" />
+            </Grid>
+
+            <ControlTemplate.Triggers>
+
+                <Trigger Property = "IsMouseOver" Value = "True">
+                    <Setter TargetName = "ButtonEllipse" Property = "Fill" >
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint = "0,0.2" EndPoint = "0.2,1.4">
+                                <GradientStop Offset = "0" Color = "YellowGreen" />
+                                <GradientStop Offset = "1" Color = "Gold" />
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+
+                <Trigger Property = "IsPressed" Value = "True">
+                    <Setter Property = "RenderTransform">
+                        <Setter.Value>
+                            <ScaleTransform ScaleX = "0.8" ScaleY = "0.8" 
+                        CenterX = "0" CenterY = "0"  />
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property = "RenderTransformOrigin" Value = "0.5,0.5" />
+                </Trigger>
+
+            </ControlTemplate.Triggers>
+
+        </ControlTemplate>
+    </Window.Resources>
+
+    <StackPanel>
+        <Button Content = "Round Button!"
+         Template = "{StaticResource ButtonTemplate}" 
+         Width = "150" Margin = "50" />
+        <Button Content = "Default Button!" Height = "40" 
+         Width = "150" Margin = "5" />
+    </StackPanel>
+
 </Window>

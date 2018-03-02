@@ -1,0 +1,58 @@
+﻿<Window x:Class="T_049_WPF_Data_Template.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T_049_WPF_Data_Template"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <!-- 
+    Data Template
+A Data Template defines and specifies the appearance and structure of a collection of data. It provides the flexibility to format and define the presentation of the data on any UI element. It is mostly used on data related Item controls such as ComboBox, ListBox, etc.
+
+Example
+Let’s take a simple example to understand the concept of data template. Create a new WPF project with the name WPFDataTemplates.
+
+In the following XAML code, we will create a Data Template as resource to hold labels and textboxes. There is a button and a list box as well which to display the data.
+    
+    -->
+    <Window.Resources>
+        <DataTemplate DataType = "{x:Type local:Person}">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height = "Auto" />
+                    <RowDefinition Height = "Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width = "Auto" />
+                    <ColumnDefinition Width = "200" />
+                </Grid.ColumnDefinitions>
+
+                <Label Name = "nameLabel" Margin = "10"/>
+                <TextBox Name = "nameText" Grid.Column = "1" Margin = "10" 
+               Text = "{Binding Name}"/>
+                <Label Name = "ageLabel" Margin = "10" Grid.Row = "1"/>
+                <TextBox Name = "ageText" Grid.Column = "1" Grid.Row = "1" Margin = "10" 
+               Text = "{Binding Age}"/>
+            </Grid>
+
+        </DataTemplate>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height = "Auto" />
+            <RowDefinition Height = "*" />
+        </Grid.RowDefinitions>
+
+        <ListBox ItemsSource = "{Binding}" />
+        <StackPanel Grid.Row = "1" >
+            <Button Content = "_Show..." Click = "Button_Click" Width = "80" HorizontalAlignment = "Left" Margin = "10"/>
+        </StackPanel>
+
+    </Grid>
+
+
+</Window>
