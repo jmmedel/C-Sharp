@@ -1,28 +1,29 @@
-﻿<Window x:Class="T_028_WPF_Tooltip.MainWindow"
+﻿<Window x:Class="T_029_WPF_Window.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:T_028_WPF_Tooltip"
+        xmlns:local="clr-namespace:T_029_WPF_Window"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <!-- WPF - Tooltip
-    A tooltip is a control that creates a pop-up window that displays information for an element in the GUI. The hierarchical inheritance of ToolTip class is as follows −
-
-Hierarchical of Tooltip
-Commonly Used Properties of ToolTip Class
-Given below are the most commonly used properties of ToolTip.
-Commonly Used Events of ToolTip Class
-Given below are the most commonly used events of ToolTip.
+    <!-- WPF - Window
+    Window is the root window of XAML 
+    applications which provides minimize/maximize
+    option, title bar, border, and close button.
+    It also provides the ability to create, configure,
+    show, and manage the lifetime of windows and dialog 
+    boxes. The hierarchical inheritance of Window class is
+    as follows −
+    Commonly Used Properties of Window Class
+Given below are the most commonly used properties of Window.
+Commonly Used Events of Window Class
+Given below are the most commonly used events of Window.
+Commonly Used Methods of Window Class
+Given below are the most commonly used methods of Window.
 Example
-Let’s create a new WPF project with the name WPFToolTipControl.
+When you create a new WPF project, then by default, the Window control is present. Let’s have a look at the following example.
 
-Drag two text blocks, two text boxes, and one button from the Toolbox.
-
-The following example shows how to use a ToolTip in a WPF application.
-
-The following XAML code creates a ToolTip with some properties to display ToolTips on Button and Text boxes.
-    
+The following XAML code starts with a <Window> Tag and ends with a </Window> tag. The code sets some properties for the window and creates some other controls like text blocks, button, etc.
     
     -->
     <Grid>
@@ -30,7 +31,7 @@ The following XAML code creates a ToolTip with some properties to display ToolTi
          Margin = "101,75,0,0" TextWrapping = "Wrap"  
          Text = "User Name" VerticalAlignment = "Top" />
 
-        <TextBlock x:Name = "textBlock1" HorizontalAlignment = "Left"  
+        <TextBlock x:Name = "textBlock1" HorizontalAlignment = "Left"
          Margin = "101,125,0,0" TextWrapping = "Wrap"  
          Text = "Password" VerticalAlignment = "Top" />
 

@@ -1,0 +1,37 @@
+﻿<Window x:Class="T_031_WPF_Layouts.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T_031_WPF_Layouts"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <!-- 
+    WPF - Layouts
+    The layout of controls is very important and critical for application usability. It is used to arrange a group of GUI elements in your application. There are certain important things to consider while selecting layout panels −
+
+Positions of the child elements
+Sizes of the child elements
+Layering of overlapping child elements on top of each other
+Fixed pixel arrangement of controls doesn’t work when the application is to be sed on different screen resolutions. XAML provides a rich set of built-in layout panels to arrange GUI elements in an appropriate way. Some of the most commonly used and popular layout panels are as follows −
+    
+    Sr. No.	Panels & Description
+1	Stack Panel
+Stack panel is a simple and useful layout panel in XAML. In stack panel, child elements can be arranged in a single line, either horizontally or vertically, based on the orientation property.
+
+2	Wrap Panel
+In WrapPanel, child elements are positioned in sequential order, from left to right or from top to bottom based on the orientation property.
+
+3	Dock Panel
+DockPanel defines an area to arrange child elements relative to each other, either horizontally or vertically. With DockPanel you can easily dock child elements to top, bottom, right, left and center using the Dock property.
+
+4	Canvas Panel
+Canvas panel is the basic layout panel in which the child elements can be positioned explicitly using coordinates that are relative to the Canvas any side such as left, right, top and bottom.
+
+5	Grid Panel
+A Grid Panel provides a flexible area which consists of rows and columns. In a Grid, child elements can be arranged in tabular form.
+    -->
+    <Grid>
+        
+    </Grid>
+</Window>
