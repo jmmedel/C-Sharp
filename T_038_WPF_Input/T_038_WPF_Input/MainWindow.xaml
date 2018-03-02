@@ -1,0 +1,29 @@
+﻿<Window x:Class="T_038_WPF_Input.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T_038_WPF_Input"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <!-- 
+    WPF - Input
+    Windows Presentation Foundation (WPF) provides a powerful API with the help of which applications can get input from various devices such as mouse, keyboard, and touch panels. In this chapter, we will discuss the following types of input which can be handled in WPF applications −
+
+Sr. No.	Inputs & Description
+1	Mouse
+There are different types of mouse inputs such as MouseDown, MouseEnter, MouseLeave, etc.
+
+2	Keyboard
+There are many types of keyboard inputs such as KeyDown, KeyUp, TextInput, etc.
+
+3	ContextMenu or RoutedCommands
+RoutedCommands enable input handling at a more semantic level. These are actually simple instructions as New, Open, Copy, Cut, and Save.
+
+4	Multi Touch
+Windows 7 and its higher versions have the ability to receive input from multiple touchsensitive devices. WPF applications can also handle touch input as other input, such as the mouse or keyboard, by raising events when a touch occurs.
+    -->
+    <Grid>
+        
+    </Grid>
+</Window>
