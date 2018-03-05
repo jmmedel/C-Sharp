@@ -6,7 +6,20 @@
         xmlns:local="clr-namespace:WPF_011_TextBlock_Span"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <!-- 
+    Span
+The Span element doesn't have any specific rendering by default, but allows you to set almost any kind of specific rendering, including font size, style and weight, background and foreground colors and so on. The great thing about the Span element is that it allows for other inline elements inside of it, making it easy to do even advanced combinations of text and style. In the following example, I have used many Span elements to show you some of the many possibilities when using inline Span elements:
+    
+    -->
     <Grid>
-        
+        <TextBlock Margin="10" TextWrapping="Wrap">
+                        This <Span FontWeight="Bold">is</Span> a
+                        <Span Background="Silver" Foreground="Maroon">TextBlock</Span>
+                        with <Span TextDecorations="Underline">several</Span>
+                        <Span FontStyle="Italic">Span</Span> elements,
+                        <Span Foreground="Blue">
+                                using a <Bold>variety</Bold> of <Italic>styles</Italic>
+                        </Span>.
+        </TextBlock>
     </Grid>
 </Window>
