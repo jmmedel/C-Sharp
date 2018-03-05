@@ -4,15 +4,23 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_005_Resources"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="150" Width="350">
     <!-- 
     WPF introduces a very handy concept: The ability to store data as a resource, either locally for a control, locally for the entire window or globally for the entire application. The data can be pretty much whatever you want, from actual information to a hierarchy of WPF controls. This allows you to place data in one place and then use it from or several other places, which is very useful.
 
 The concept is used a lot for styles and templates, which we'll discuss later on in this tutorial, but as it will be illustrated in this chapter, you can use it for many other things as well. Allow me to demonstrate it with a simple example:
     
     -->
+    <Window.Resources>
+        <sys:String x:Key="strHelloWorld">Hello,World!</sys:String>
+    </Window.Resources>
     <Grid>
-        
+        <StackPanel Margin="10">
+            <TextBlock Text="{StaticResource strHelloWorld}" FontSize="56" />
+            <TextBlock>Just another "<TextBlock Text="{StaticResource strHelloWorld}" /> exanoke but with resources</TextBlock>
+            
+        </StackPanel>
     </Grid>
 </Window>
