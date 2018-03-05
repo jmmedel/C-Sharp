@@ -23,4 +23,18 @@ The concept is used a lot for styles and templates, which we'll discuss later on
             
         </StackPanel>
     </Grid>
+    
+    <!--
+    Resources are given a key, using the x:Key attribute, which allows you to reference it from other parts of the application by using this key, in combination with the StaticResource markup extension. In this example, I just store a simple string, which I then use from two different TextBlock controls.
+
+StaticResource vs. DynamicResource
+In the examples so far, I have used the StaticResource markup extension to reference a resource. However, an alternative exists, in form of the DynamicResource.
+
+The main difference is that a static resource is resolved only once, which is at the point where the XAML is loaded. If the resource is then changed later on, this change will not be reflected where you have used the StaticResource.
+
+A DynamicResource on the other hand, is resolved once it's actually needed, and then again if the resource changes. Think of it as binding to a static value vs. binding to a function that monitors this value and sends it to you each time it's changed - it's not exactly how it works, but it should give you a better idea of when to use what. Dynamic resources also allows you to use resources which are not even there during design time, e.g. if you add them from Code-behind during the startup of the application.
+    
+    -->
 </Window>
+    
+    
