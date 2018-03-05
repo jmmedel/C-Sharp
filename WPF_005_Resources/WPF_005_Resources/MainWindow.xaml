@@ -6,7 +6,12 @@
         xmlns:local="clr-namespace:WPF_005_Resources"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <!-- 
+    WPF introduces a very handy concept: The ability to store data as a resource, either locally for a control, locally for the entire window or globally for the entire application. The data can be pretty much whatever you want, from actual information to a hierarchy of WPF controls. This allows you to place data in one place and then use it from or several other places, which is very useful.
+
+The concept is used a lot for styles and templates, which we'll discuss later on in this tutorial, but as it will be illustrated in this chapter, you can use it for many other things as well. Allow me to demonstrate it with a simple example:
     
+    -->
     <Grid>
         
     </Grid>

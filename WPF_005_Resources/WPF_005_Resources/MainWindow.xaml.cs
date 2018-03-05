@@ -24,5 +24,6 @@ namespace WPF_005_Resources
         {
             InitializeComponent();
         }
+
     }
 }
