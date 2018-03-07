@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0DE95A1C-6F1F-4AB7-B0C3-58D6D717A0D4}</ProjectGuid>
+    <ProjectGuid>{0D25E77C-A034-4AF5-9D3B-E1DE7FC4F7D3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>T_119_ICloneable</RootNamespace>
-    <AssemblyName>T_119_ICloneable</AssemblyName>
+    <RootNamespace>T_120_Changing_yoyr_Project_Properties</RootNamespace>
+    <AssemblyName>T_120_Changing yoyr Project_Properties</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -53,9 +53,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
