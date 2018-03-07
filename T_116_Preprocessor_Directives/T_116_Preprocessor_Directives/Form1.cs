@@ -28,6 +28,7 @@ namespace T_116_Preprocessor_Directives
 #if Kagaya
             MessageBox.Show("Kagaya us defined");
 #endif // Kagaya
+            
         }
 
     }
