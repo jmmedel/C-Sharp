@@ -21,15 +21,20 @@ namespace T_115_Notified_When_Files_Change
         {
             FileSystemWatcher fsw = new FileSystemWatcher();
             fsw.Path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            fsw.NotifyFilter = NotifyFilters.LastWrite;
+            fsw.NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.FileName;
             fsw.Filter = "*.txt";
-            fsw.Changed += Fsw_Changed;
+            fsw.Changed += new FileSystemEventHandler(Fsw_Changed);
+            fsw.Renamed += new RenamedEventHandler(Fsw_Changed);
             fsw.EnableRaisingEvents = true;
         }
 
         private void Fsw_Changed(object sender, FileSystemEventArgs e)
         {
             MessageBox.Show("you have save a text file");
+        }
+        private void Fsw_Chaned(object sender, FileSystemEventArgs e)
+        {
+            MessageBox.Show("You have saved a text file");
         }
     }
 }
