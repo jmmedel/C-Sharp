@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Security.Cryptography;
 using System.Collections.Generic;
+using System.IO;
 namespace T_117_Captcha_Generator_Setting_Up
 {
     public partial class Form1 : Form
@@ -21,17 +22,18 @@ namespace T_117_Captcha_Generator_Setting_Up
         Image[] generateCapcha(int amout)
         {
             Image[] image = new Image[amout];
+            Random ran = new Random();
             for (int i = 0; i < amout; i++)
             {
                 Bitmap bitmap = new Bitmap(panel1.Width, panel1.Height);
                 Graphics g = Graphics.FromImage(bitmap);
                 g.Clear(panel1.BackColor);
-                Random ran = new Random();
+                
                 SolidBrush b = new SolidBrush(Color.FromArgb(0xFF, ran.Next(0, 255), ran.Next(0, 255), ran.Next(0, 255)));
                 Pen p = new Pen(Color.FromArgb(0xFF, ran.Next(0, 255), ran.Next(0, 255), ran.Next(0, 255)));
                 char[] chars = "qwertyuiopasdfghjklzxcvbnm1234567899".ToCharArray();
                 string randomString = "";
-                for (int c = 0; i < 6; c++)
+                for (int d = 0; d < 6; d++)
                 {
                     randomString += chars[ran.Next(0, 35)];
                 }
@@ -48,7 +50,7 @@ namespace T_117_Captcha_Generator_Setting_Up
                 FontFamily ff = new FontFamily("Arial");
                 Font f = new System.Drawing.Font(ff, 14);
                 g.DrawString(randomString, f, b, 20, 20);
-                for (int z = 0; i < 6; z++)
+                for (int z = 0; z < 6; z++)
                 {
                     int j = ran.Next(0, 2);
                     if (j == 0) g.DrawRectangle(p, ran.Next(0, 111), ran.Next(0, 60), ran.Next(0, 60), ran.Next(0, 60));
@@ -63,16 +65,51 @@ namespace T_117_Captcha_Generator_Setting_Up
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            foreach (Image item in generateCapcha(5))
+            generateCapcha(5);
+            Image[] images = generateCapcha(Convert.ToInt32(textBox1.Text));
+            int g = 0;
+            foreach (Image item in images)
             {
-                MessageBox.Show("Heelo");
+                item.Save(label1.Text + "\\" + String[g] + ".png");
+                g++;
             }
             
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
+            if(fbd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                label1.Text = fbd.SelectedPath;
+            }
+        }
+        string md5hasname = "";
+        private void button4_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            if(ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                pictureBox1.ImageLocation = ofd.FileName;
+                md5hasname = Path.GetFileNameWithoutExtension(ofd.FileName);
+            }
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();
+            int y = 0;
+            byte[] buffer = new byte[textBox2.Text.Length];
+            foreach (char c in textBox2.Text.ToCharArray())
+            {
+                buffer[y] = (byte)c;
+            }
+            string blah = BitConverter.ToString(md5.ComputeHash(buffer)).Replace("-", "");
+            if(blah != md5hasname)
+            {
+                MessageBox.Show("You got it wrong");
+            }
+            else MessageBox.Show("You got it right");
         }
     }
 }
