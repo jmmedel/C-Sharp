@@ -17,6 +17,7 @@ namespace T_114_Address_Book_Making_UL
             InitializeComponent();
         }
         // part 170 
+
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -31,5 +32,39 @@ namespace T_114_Address_Book_Making_UL
         {
 
         }
-    }
+
+        class Person {
+            
+            public string Name
+            {
+                get;
+                set;
+            }
+            public string streeAddress
+            {
+                get;
+                set;
+            }
+
+            public string Email
+            {
+                get;
+                set;
+            }
+            public string AdditionaNotes
+            {
+                get;
+                set;
+            }
+            public string Birthday
+            {
+                get;
+                set;
+            }
+
+        }
+
+
+    }// end of class
+
 }
