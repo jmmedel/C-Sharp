@@ -1,4 +1,7 @@
-﻿using System;
+﻿#define Kagaya
+#undef Kagaya
+// using define undef Proprecessor
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +22,13 @@ namespace T_116_Preprocessor_Directives
 
         private void button1_Click(object sender, EventArgs e)
         {
+            #region kagaya
 
+            #endregion
+#if Kagaya
+            MessageBox.Show("Kagaya us defined");
+#endif // Kagaya
         }
+
     }
 }
