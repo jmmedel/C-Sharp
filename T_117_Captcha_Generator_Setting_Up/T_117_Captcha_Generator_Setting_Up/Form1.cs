@@ -16,5 +16,22 @@ namespace T_117_Captcha_Generator_Setting_Up
         {
             InitializeComponent();
         }
+        Image[] generateCapcha(int amout)
+        {
+            Graphics g = panel1.CreateGraphics();
+            Random ran = new Random();
+            SolidBrush b = new SolidBrush(Color.FromArgb(0xFF,ran.Next(0,255), ran.Next(0, 255), ran.Next(0, 255)));
+            Pen p = new Pen(Color.FromArgb(0xFF, ran.Next(0, 255), ran.Next(0, 255), ran.Next(0, 255)));
+            return null;
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
