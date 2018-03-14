@@ -80,6 +80,7 @@
             this.btmConnect.TabIndex = 5;
             this.btmConnect.Text = "Connect";
             this.btmConnect.UseVisualStyleBackColor = true;
+            this.btmConnect.Click += new System.EventHandler(this.btmConnect_Click);
             // 
             // txtMessage
             // 
@@ -97,6 +98,7 @@
             this.btmSend.TabIndex = 11;
             this.btmSend.Text = "Send";
             this.btmSend.UseVisualStyleBackColor = true;
+            this.btmSend.Click += new System.EventHandler(this.btmSend_Click);
             // 
             // txtStatus
             // 
@@ -120,7 +122,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btmConnect);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Client";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

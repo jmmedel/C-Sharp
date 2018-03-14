@@ -45,6 +45,7 @@
             this.btmStart.TabIndex = 0;
             this.btmStart.Text = "Start";
             this.btmStart.UseVisualStyleBackColor = true;
+            this.btmStart.Click += new System.EventHandler(this.btmStart_Click);
             // 
             // label1
             // 
@@ -88,6 +89,7 @@
             this.btmStop.TabIndex = 5;
             this.btmStop.Text = "Stop";
             this.btmStop.UseVisualStyleBackColor = true;
+            this.btmStop.Click += new System.EventHandler(this.btmStop_Click);
             // 
             // txtStatus
             // 
@@ -111,6 +113,7 @@
             this.Controls.Add(this.btmStart);
             this.Name = "Form1";
             this.Text = "Server";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
