@@ -15,7 +15,8 @@ public class View : Form {
 	
 	private Button button;
 	private Label label;
-  private TableLayoutPanel panel;
+    private Button button1;
+    private TableLayoutPanel panel;
 
 	public View(Controller c){
 		button = new Button();
@@ -49,11 +50,23 @@ public class View : Form {
 
     private void InitializeComponent()
     {
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(176, 216);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            
             // 
             // View
             // 
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.button1);
             this.Name = "View";
             this.Load += new System.EventHandler(this.View_Load);
             this.ResumeLayout(false);
@@ -64,4 +77,6 @@ public class View : Form {
     {
 
     }
+
+   
 } // end View clas definition
