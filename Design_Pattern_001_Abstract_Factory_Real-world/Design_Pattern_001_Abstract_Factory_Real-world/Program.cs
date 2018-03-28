@@ -210,5 +210,6 @@ namespace DoFactory.GangOfFour.Abstract.RealWorld
         {
             _carnivore.Eat(_herbivore);
         }
+
     }
 }
