@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{80565351-0D02-4139-873A-A99FA9C00544}</ProjectGuid>
+    <ProjectGuid>{C325DDBF-6A3C-4F3C-99C4-5D2CDAD6B3E4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Design_Pattern_014_Command_Structural_Code</RootNamespace>
-    <AssemblyName>Design_Pattern_014_Command_Structural_Code</AssemblyName>
+    <RootNamespace>Design_Pattern_014_Command_Real_World_Code</RootNamespace>
+    <AssemblyName>Design_Pattern_014_Command_Real_World_Code</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,9 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="command.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
