@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C215707D-A043-4DB8-A179-96F3D5A5EB49}</ProjectGuid>
+    <ProjectGuid>{C3AF8B2C-5300-4372-AAAC-5163079BF46E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Design_Pattern_003_Factory_Method_Strcutal_code</RootNamespace>
-    <AssemblyName>Design_Pattern_003_Factory_Method_Strcutal_code</AssemblyName>
+    <RootNamespace>Design_Pattern_003_Factory_Method_Real_World_Code</RootNamespace>
+    <AssemblyName>Design_Pattern_003_Factory_Method_Real_World_Code</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,9 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="factory.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
