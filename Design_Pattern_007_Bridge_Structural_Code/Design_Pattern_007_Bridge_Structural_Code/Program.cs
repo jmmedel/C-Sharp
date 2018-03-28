@@ -24,13 +24,135 @@ defines the interface for implementation classes. This interface doesn't have to
 ConcreteImplementor   (CustomersDataObject)
 implements the Implementor interface and defines its concrete implementation.
 
+
+    Structural code in C#
+
+This structural code demonstrates the Bridge pattern which separates (decouples) the interface from its implementation. The implementation can evolve without changing clients which use the abstraction of the object.
+
  */
-namespace Design_Pattern_007_Bridge_Structural_Code
+using System;
+
+namespace DoFactory.GangOfFour.Bridge.Structural
 {
-    class Program
+    /// <summary>
+
+    /// MainApp startup class for Structural
+
+    /// Bridge Design Pattern.
+
+    /// </summary>
+
+    class MainApp
+
     {
-        static void Main(string[] args)
+        /// <summary>
+
+        /// Entry point into console application.
+
+        /// </summary>
+
+        static void Main()
         {
+            Abstraction ab = new RefinedAbstraction();
+
+            // Set implementation and call
+
+            ab.Implementor = new ConcreteImplementorA();
+            ab.Operation();
+
+            // Change implemention and call
+
+            ab.Implementor = new ConcreteImplementorB();
+            ab.Operation();
+
+            // Wait for user
+
+            Console.ReadKey();
+        }
+    }
+
+    /// <summary>
+
+    /// The 'Abstraction' class
+
+    /// </summary>
+
+    class Abstraction
+
+    {
+        protected Implementor implementor;
+
+        // Property
+
+        public Implementor Implementor
+        {
+            set { implementor = value; }
+        }
+
+        public virtual void Operation()
+        {
+            implementor.Operation();
+        }
+    }
+
+    /// <summary>
+
+    /// The 'Implementor' abstract class
+
+    /// </summary>
+
+    abstract class Implementor
+
+    {
+        public abstract void Operation();
+    }
+
+    /// <summary>
+
+    /// The 'RefinedAbstraction' class
+
+    /// </summary>
+
+    class RefinedAbstraction : Abstraction
+
+    {
+        public override void Operation()
+        {
+            implementor.Operation();
+        }
+    }
+
+    /// <summary>
+
+    /// The 'ConcreteImplementorA' class
+
+    /// </summary>
+
+    class ConcreteImplementorA : Implementor
+
+    {
+        public override void Operation()
+        {
+            Console.WriteLine("ConcreteImplementorA Operation");
+        }
+    }
+
+    /// <summary>
+
+    /// The 'ConcreteImplementorB' class
+
+    /// </summary>
+
+    class ConcreteImplementorB : Implementor
+
+    {
+        public override void Operation()
+        {
+            Console.WriteLine("ConcreteImplementorB Operation");
         }
     }
 }
+
+
+
+
