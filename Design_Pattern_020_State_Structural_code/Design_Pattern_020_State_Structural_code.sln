@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Design_Pattern_020_State_Structural_code", "Design_Pattern_020_State_Structural_code\Design_Pattern_020_State_Structural_code.csproj", "{230D4775-A036-4F2A-A04C-A6AD103553FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{230D4775-A036-4F2A-A04C-A6AD103553FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{230D4775-A036-4F2A-A04C-A6AD103553FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{230D4775-A036-4F2A-A04C-A6AD103553FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{230D4775-A036-4F2A-A04C-A6AD103553FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F42A20A0-E42C-46F6-B80F-2C1B61BCF283}
+	EndGlobalSection
+EndGlobal
