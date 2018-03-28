@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{230D4775-A036-4F2A-A04C-A6AD103553FF}</ProjectGuid>
+    <ProjectGuid>{2C633CCC-F68C-4400-9FD3-9C8255A5265E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Design_Pattern_020_State_Structural_code</RootNamespace>
-    <AssemblyName>Design_Pattern_020_State_Structural_code</AssemblyName>
+    <RootNamespace>Design_Pattern_020_State_Real_World_code</RootNamespace>
+    <AssemblyName>Design_Pattern_020_State_Real_World_code</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,9 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="state.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
