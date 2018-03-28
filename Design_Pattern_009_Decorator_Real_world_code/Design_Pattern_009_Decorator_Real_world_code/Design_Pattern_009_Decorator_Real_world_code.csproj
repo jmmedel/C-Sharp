@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2742B06E-CFE0-4A6F-BA75-608014103ECF}</ProjectGuid>
+    <ProjectGuid>{716A7C4D-9C4F-49DE-B210-59AB5B493B01}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Design_Pattern_009_Decorator_Structual_code</RootNamespace>
-    <AssemblyName>Design_Pattern_009_Decorator_Structual_code</AssemblyName>
+    <RootNamespace>Design_Pattern_009_Decorator_Real_world_code</RootNamespace>
+    <AssemblyName>Design_Pattern_009_Decorator_Real_world_code</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,9 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="decorator.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

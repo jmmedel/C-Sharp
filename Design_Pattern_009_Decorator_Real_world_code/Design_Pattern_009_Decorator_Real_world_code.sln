@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Design_Pattern_009_Decorator_Real_world_code", "Design_Pattern_009_Decorator_Real_world_code\Design_Pattern_009_Decorator_Real_world_code.csproj", "{716A7C4D-9C4F-49DE-B210-59AB5B493B01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{716A7C4D-9C4F-49DE-B210-59AB5B493B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{716A7C4D-9C4F-49DE-B210-59AB5B493B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{716A7C4D-9C4F-49DE-B210-59AB5B493B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{716A7C4D-9C4F-49DE-B210-59AB5B493B01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95067C1D-A9BF-4941-9B2E-BB11277ED8AB}
+	EndGlobalSection
+EndGlobal

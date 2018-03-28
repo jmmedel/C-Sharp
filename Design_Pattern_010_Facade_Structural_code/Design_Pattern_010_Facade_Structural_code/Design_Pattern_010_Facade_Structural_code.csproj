@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2742B06E-CFE0-4A6F-BA75-608014103ECF}</ProjectGuid>
+    <ProjectGuid>{AFBA2ED3-8470-476B-A0EB-60AC07A94060}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Design_Pattern_009_Decorator_Structual_code</RootNamespace>
-    <AssemblyName>Design_Pattern_009_Decorator_Structual_code</AssemblyName>
+    <RootNamespace>Design_Pattern_010_Facade_Structural_code</RootNamespace>
+    <AssemblyName>Design_Pattern_010_Facade_Structural_code</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -49,7 +49,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="decorator.gif" />
+    <Content Include="facade.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
