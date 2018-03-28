@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Design_Pattern_023_Visitor_Real_world_code", "Design_Pattern_023_Visitor_Real_world_code\Design_Pattern_023_Visitor_Real_world_code.csproj", "{B021B513-C048-4751-A4D4-240F7C0C9FBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B021B513-C048-4751-A4D4-240F7C0C9FBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B021B513-C048-4751-A4D4-240F7C0C9FBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B021B513-C048-4751-A4D4-240F7C0C9FBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B021B513-C048-4751-A4D4-240F7C0C9FBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17B57173-7983-4E54-A5C2-C0358C97AB26}
+	EndGlobalSection
+EndGlobal
