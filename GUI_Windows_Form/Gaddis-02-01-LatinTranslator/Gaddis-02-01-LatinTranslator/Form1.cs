@@ -6,6 +6,11 @@ Create an application that translates the Latin words to English.
 The form should have three buttons, one for each Latin word. 
 When the user clicks a button, the application should display the English translation in a Label control.
 */
+/*
+  
+ this is import class
+ 
+*/
 using System;
 using System.Windows.Forms;
 
