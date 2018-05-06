@@ -17,7 +17,7 @@ namespace Gaddis_03_04_SalesTaxTotal
     {
 
     }
-
+        //onclick
     private void btnCalculate_Click(object sender, EventArgs e)
     {
       double salesAmount;
