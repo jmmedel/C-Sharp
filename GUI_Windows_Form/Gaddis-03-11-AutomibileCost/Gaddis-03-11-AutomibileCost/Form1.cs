@@ -31,7 +31,7 @@ namespace Gaddis_03_11_AutomibileCost
         oil + tires + maintanance;
 
       double totalAnnualCost = totalMonthlyCost * 12;
-
+      lstOutput.Items.Clear();
       lstOutput.Items.Add("Total Monthly Cost: " + totalMonthlyCost.ToString("C"));
       lstOutput.Items.Add("Total Annual Cost: " + totalAnnualCost.ToString("C"));
     }
