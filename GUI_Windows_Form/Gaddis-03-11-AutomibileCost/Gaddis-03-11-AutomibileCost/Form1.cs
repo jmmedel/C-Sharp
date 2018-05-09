@@ -20,20 +20,38 @@ namespace Gaddis_03_11_AutomibileCost
 
     private void btnCalculate_Click(object sender, EventArgs e)
     {
-      double loanPayment = Convert.ToDouble(txtLoanPayment.Text);
-      double insurance = Convert.ToDouble(txtInsurance.Text);
-      double gas = Convert.ToDouble(txtGas.Text);
-      double oil = Convert.ToDouble(txtOil.Text);
-      double tires = Convert.ToDouble(txtTires.Text);
-      double maintanance = Convert.ToDouble(txtMaintenance.Text);
+            double loanPayment;
+            double insurance;
+            double gas;
+            double oil;
+            double tires;
+            double maintanance;
+            try
+            {
+                 loanPayment = Convert.ToDouble(txtLoanPayment.Text);
+                 insurance = Convert.ToDouble(txtInsurance.Text);
+                 gas = Convert.ToDouble(txtGas.Text);
+                 oil = Convert.ToDouble(txtOil.Text);
+                 tires = Convert.ToDouble(txtTires.Text);
+                 maintanance = Convert.ToDouble(txtMaintenance.Text);
+                double totalMonthlyCost = loanPayment + insurance + gas +
+                 oil + tires + maintanance;
 
-      double totalMonthlyCost = loanPayment + insurance + gas +
-        oil + tires + maintanance;
+                double totalAnnualCost = totalMonthlyCost * 12;
 
-      double totalAnnualCost = totalMonthlyCost * 12;
-      lstOutput.Items.Clear();
-      lstOutput.Items.Add("Total Monthly Cost: " + totalMonthlyCost.ToString("C"));
-      lstOutput.Items.Add("Total Annual Cost: " + totalAnnualCost.ToString("C"));
+                lstOutput.Items.Clear();
+                lstOutput.Items.Add("Total Monthly Cost: " + totalMonthlyCost.ToString("C"));
+                lstOutput.Items.Add("Total Annual Cost: " + totalAnnualCost.ToString("C"));
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Please enter a valid value");
+            }
+     
+
+     
+     
     }
   }
 }
