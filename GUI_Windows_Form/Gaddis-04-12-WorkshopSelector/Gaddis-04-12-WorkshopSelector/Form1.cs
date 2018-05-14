@@ -1,4 +1,5 @@
 ﻿/*
+ * Done
 Workshop Selector The following table shows a training company’s workshops, the number of days of each, and their registration fees.
 Workshop            Number of Days            Registration Fee 
 Handling Stress       3                         $1,000 
@@ -96,4 +97,5 @@ namespace Gaddis_04_12_WorkshopSelector
 
     }
   }
+
 }
