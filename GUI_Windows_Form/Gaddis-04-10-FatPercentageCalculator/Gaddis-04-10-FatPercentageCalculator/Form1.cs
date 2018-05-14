@@ -1,4 +1,5 @@
 ﻿/*
+ * Done
 Fat Percentage Calculator One gram of fat has 9 calories. If you know the number of fat grams in a particular food, you can use the following formula to calculate the number of calories that come from fat in that food: 
 Calories from fat = Fat grams × 9 
 
