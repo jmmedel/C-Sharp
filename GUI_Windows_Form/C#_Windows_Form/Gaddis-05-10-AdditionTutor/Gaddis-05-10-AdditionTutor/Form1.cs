@@ -11,8 +11,11 @@ namespace Gaddis_05_10_AdditionTutor
 {
   public partial class frmAdditionTutor : Form
   {
+
+    // get the the two number
     int first;
     int second;
+    // random number
     Random rand;
     public frmAdditionTutor()
     {
