@@ -1,4 +1,5 @@
 ﻿/*
+ * Done
 Dice Simulator Create an application that simulates rolling a pair of dice.When the user clicks a button, the application should generate two random numbers, each in the range of 1 through 6, to represent the value of the dice.Use PictureBox controls to display the dice. (In the Student Sample Programs, in the Chap05 folder, you will find six images named Die1.bmp, Die2.bmp, Die3.bmp, Die4.bmp, Die5.bmp, and Die6.bmp that you can use in the PictureBoxes.)
 */
 using System;
