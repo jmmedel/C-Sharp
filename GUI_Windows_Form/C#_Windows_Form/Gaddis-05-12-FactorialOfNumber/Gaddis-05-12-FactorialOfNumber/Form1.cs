@@ -1,4 +1,5 @@
 ﻿/*
+ * Done
 Calculating the Factorial of a Number In mathematics, the notation n! represents the factorial of the nonnegative integer n.The factorial of n is the product of all the nonnegative integers from 1 through n. For example, 
 7! = 1 × 2 × 3 × 4 × 5 × 6 × 7 = 5,040 
 4! = 1 × 2 × 3 × 4 = 24 
