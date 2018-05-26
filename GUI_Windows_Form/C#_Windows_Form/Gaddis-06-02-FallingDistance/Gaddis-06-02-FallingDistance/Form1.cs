@@ -1,4 +1,5 @@
 ﻿/*
+ * Done
 Falling Distance When an object is falling because of gravity, the following formula can be used to determine the distance the object falls in a specific time period: 
 d = 1/2 gt(pow of 2)
 The variables in the formula are as follows: 
